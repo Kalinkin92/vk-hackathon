@@ -1,0 +1,7685 @@
+@charset "UTF-8";
+/*! normalize.e33b7b92.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+@font-face {
+  font-family: 'BrandonText-Medium';
+  src: url("../webfonts/26EF29_1_0.eot");
+  src: url("../webfonts/26EF29_1_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/26EF29_1_0.woff") format("woff"), url("../webfonts/26EF29_1_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'BrandonText-Regular';
+  src: url("../webfonts/26EF37_0_0.eot");
+  src: url("../webfonts/26EF37_0_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/26EF37_0_0.woff") format("woff"), url("../webfonts/26EF37_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'SlatePro-Bk';
+  src: url("../webfonts/2AAC0C_0_0.eot");
+  src: url("../webfonts/2AAC0C_0_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/2AAC0C_0_0.woff") format("woff"), url("../webfonts/2AAC0C_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'SlatePro';
+  src: url("../webfonts/2AAC0C_1_0.eot");
+  src: url("../webfonts/2AAC0C_1_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/2AAC0C_1_0.woff") format("woff"), url("../webfonts/2AAC0C_1_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'SlatePro-Light';
+  src: url("../webfonts/2AAC0C_2_0.eot");
+  src: url("../webfonts/2AAC0C_2_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/2AAC0C_2_0.woff") format("woff"), url("../webfonts/2AAC0C_2_0.ttf") format("truetype"); }
+
+body {
+  font-family: "SlatePro-Bk", sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+a {
+  color: #54003D; }
+
+svg,
+img[src$=".svg"] {
+  max-width: 100%; }
+
+.u-brand-c-1 {
+  color: #63004A !important; }
+
+.u-brand-c-2 {
+  color: #333132 !important; }
+
+/**
+ * A thin layer on top of normalize.e33b7b92.css that provides a starting point more
+ * suitable for web applications. Removes the default spacing and border for
+ * appropriate elements.
+ */
+/**
+ * High-, page-level styling.
+ *
+ * 1. Set the default `font-size` and `line-height` for the entire project,
+ *    sourced from our default variables. The `font-size` is calculated to exist
+ *    in ems, the `line-height` is calculated to exist unitlessly.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ */
+html {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  line-height: 1.4;
+  background-color: #f5f5f5;
+  overflow-y: scroll;
+  /* [2] */
+  min-height: 100%;
+  /* [3] */ }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline; }
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre {
+  margin: 0; }
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0; }
+
+/**
+ * Work around a Firefox/IE bug where the transparent `button` background
+ * results in a loss of the default `button` focus styles.
+ */
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+iframe {
+  border: 0; }
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+small {
+  font-size: inherit; }
+
+label {
+  cursor: pointer; }
+
+/*------------------------------------*    #HEADINGS
+\*------------------------------------*/
+/**
+ * Headings 1–6, with corresponding Greek-alphabet abstract classes for double-
+ * stranded heading hierarchy: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ */
+h1,
+.alpha,
+.u-alpha {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.6; }
+
+h2,
+.beta,
+.u-beta {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.1; }
+
+h3,
+.gamma,
+.u-gamma {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.1; }
+
+h4,
+.delta,
+.u-delta,
+.Nav-item {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333; }
+
+h5,
+.epsilon,
+.u-epsilon,
+.Range-title {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+h6,
+.zeta,
+.u-zeta,
+.Content-breadcrumb {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429; }
+
+.milli-size,
+.u-milliSize {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2; }
+
+.u-megaSize {
+  font-size: 60px;
+  font-size: 3.75rem;
+  line-height: 1.2; }
+
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote, p, address,
+table, figure,
+pre {
+  margin-bottom: 24px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "SlatePro-Light", sans-serif;
+  font-weight: normal;
+  color: #333132; }
+
+/**
+ * Vertical alignment utilities
+ * Depends on an appropriate `display` value.
+ */
+.u-alignBaseline {
+  vertical-align: baseline !important; }
+
+.u-alignBottom {
+  vertical-align: bottom !important; }
+
+.u-alignMiddle {
+  vertical-align: middle !important; }
+
+.u-alignTop {
+  vertical-align: top !important; }
+
+/**
+ * Display-type utilities
+ */
+.u-inline {
+  display: inline !important; }
+
+/**
+ * 1. Fix for Firefox bug: an image styled `max-width:100%` within an
+ * inline-block will display at its default size, and not limit its width to
+ * 100% of an ancestral container.
+ */
+.u-inlineBlock {
+  display: inline-block !important;
+  max-width: 100%;
+  /* 1 */ }
+
+.u-block {
+  display: block !important; }
+
+.u-table {
+  display: table !important; }
+
+.u-tableRow {
+  display: table-row !important; }
+
+.u-tableCell {
+  display: table-cell !important; }
+
+/**
+ * Contain floats
+ *
+ * Make an element expand to contain floated children.
+ * Uses pseudo-elements (micro clearfix).
+ *
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of the
+ *    element.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.u-cf:before, .Nav:before,
+.u-cf:after,
+.Nav:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.u-cf:after, .Nav:after {
+  clear: both; }
+
+/**
+ * New block formatting context
+ *
+ * This affords some useful properties to the element. It won't wrap under
+ * floats. Will also contain any floated children.
+
+ * N.B. This will clip overflow. Use the alternative method below if this is
+ * problematic.
+ */
+.u-nbfc {
+  overflow: hidden !important; }
+
+/**
+ * New block formatting context (alternative)
+ *
+ * Alternative method when overflow must not be clipped.
+ *
+ * 1. Create a new block formatting context (NBFC).
+ * 2. Avoid shrink-wrap behaviour of table-cell.
+ *
+ * N.B. This breaks down in some browsers when elements within this element
+ * exceed its width.
+ */
+.u-nbfcAlt {
+  display: table-cell !important;
+  /* 1 */
+  width: 10000px !important;
+  /* 2 */ }
+
+/**
+ * Floats
+ */
+.u-pullLeft {
+  float: left !important; }
+
+.u-pullRight {
+  float: right !important; }
+
+/*
+* Clear 
+*/
+.u-cl {
+  clear: left; }
+
+/*! suit-utils-link v0.4.0 | MIT License | github.com/suitcss */
+/**
+ * Clean link
+ *
+ * A link without any text-decoration at all.
+ */
+.u-linkClean,
+.u-linkClean:hover,
+.u-linkClean:focus,
+.u-linkClean:active {
+  text-decoration: none !important; }
+
+/**
+ * Link complex
+ *
+ * A common pattern is to have a link with several pieces of text and/or an
+ * icon, where only one piece of text should display the underline when the
+ * link is the subject of user interaction.
+ *
+ * Example HTML:
+ *
+ * <a class="u-linkComplex" href="#">
+ *   Link complex
+ *   <span class="u-linkComplexTarget">target</span>
+ * </a>
+ */
+.u-linkComplex,
+.u-linkComplex:hover,
+.u-linkComplex:focus,
+.u-linkComplex:active {
+  text-decoration: none !important; }
+
+.u-linkComplex:hover .u-linkComplexTarget,
+.u-linkComplex:focus .u-linkComplexTarget,
+.u-linkComplex:active .u-linkComplexTarget {
+  text-decoration: underline !important; }
+
+/**
+ * Block-level link
+ *
+ * Combination of traits commonly used in vertical navigation lists.
+ */
+.u-linkBlock,
+.u-linkBlock:hover,
+.u-linkBlock:focus,
+.u-linkBlock:active {
+  display: block !important;
+  text-decoration: none !important; }
+
+/**
+ * Specify the proportional offset after an element.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 4, 5, 6, 8, 10, 12 section
+ */
+.u-after1of12 {
+  margin-right: calc(100% * 1 / 12) !important; }
+
+.u-after1of10 {
+  margin-right: 10% !important; }
+
+.u-after1of8 {
+  margin-right: 12.5% !important; }
+
+.u-after1of6,
+.u-after2of12 {
+  margin-right: calc(100% * 1 / 6) !important; }
+
+.u-after1of5,
+.u-after2of10 {
+  margin-right: 20% !important; }
+
+.u-after1of4,
+.u-after2of8,
+.u-after3of12 {
+  margin-right: 25% !important; }
+
+.u-after3of10 {
+  margin-right: 30% !important; }
+
+.u-after1of3,
+.u-after2of6,
+.u-after4of12 {
+  margin-right: calc(100% * 1 / 3) !important; }
+
+.u-after3of8 {
+  margin-right: 37.5% !important; }
+
+.u-after2of5,
+.u-after4of10 {
+  margin-right: 40% !important; }
+
+.u-after5of12 {
+  margin-right: calc(100% * 5 / 12) !important; }
+
+.u-after1of2,
+.u-after2of4,
+.u-after3of6,
+.u-after4of8,
+.u-after5of10,
+.u-after6of12 {
+  margin-right: 50% !important; }
+
+.u-after7of12 {
+  margin-right: calc(100% * 7 / 12) !important; }
+
+.u-after3of5,
+.u-after6of10 {
+  margin-right: 60% !important; }
+
+.u-after5of8 {
+  margin-right: 62.5% !important; }
+
+.u-after2of3,
+.u-after4of6,
+.u-after8of12 {
+  margin-right: calc(100% * 2 / 3) !important; }
+
+.u-after7of10 {
+  margin-right: 70% !important; }
+
+.u-after3of4,
+.u-after6of8,
+.u-after9of12 {
+  margin-right: 75% !important; }
+
+.u-after4of5,
+.u-after8of10 {
+  margin-right: 80% !important; }
+
+.u-after5of6,
+.u-after10of12 {
+  margin-right: calc(100% * 5 / 6) !important; }
+
+.u-after7of8 {
+  margin-right: 87.5% !important; }
+
+.u-after9of10 {
+  margin-right: 90% !important; }
+
+.u-after11of12 {
+  margin-right: calc(100% * 11 / 12) !important; }
+
+/**
+ * Breakpoint 1 (small)
+ *
+ * Specify the proportional offset after an element.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 4, 5, 6, 8, 10, 12 section
+ */
+.u-sm-afterNone {
+  margin-left: 0 !important; }
+
+.u-sm-after1of12 {
+  margin-right: calc(100% * 1 / 12) !important; }
+
+.u-sm-after1of10 {
+  margin-right: 10% !important; }
+
+.u-sm-after1of8 {
+  margin-right: 12.5% !important; }
+
+.u-sm-after1of6,
+.u-sm-after2of12 {
+  margin-right: calc(100% * 1 / 6) !important; }
+
+.u-sm-after1of5,
+.u-sm-after2of10 {
+  margin-right: 20% !important; }
+
+.u-sm-after1of4,
+.u-sm-after2of8,
+.u-sm-after3of12 {
+  margin-right: 25% !important; }
+
+.u-sm-after3of10 {
+  margin-right: 30% !important; }
+
+.u-sm-after1of3,
+.u-sm-after2of6,
+.u-sm-after4of12 {
+  margin-right: calc(100% * 1 / 3) !important; }
+
+.u-sm-after3of8 {
+  margin-right: 37.5% !important; }
+
+.u-sm-after2of5,
+.u-sm-after4of10 {
+  margin-right: 40% !important; }
+
+.u-sm-after5of12 {
+  margin-right: calc(100% * 5 / 12) !important; }
+
+.u-sm-after1of2,
+.u-sm-after2of4,
+.u-sm-after3of6,
+.u-sm-after4of8,
+.u-sm-after5of10,
+.u-sm-after6of12 {
+  margin-right: 50% !important; }
+
+.u-sm-after7of12 {
+  margin-right: calc(100% * 7 / 12) !important; }
+
+.u-sm-after3of5,
+.u-sm-after6of10 {
+  margin-right: 60% !important; }
+
+.u-sm-after5of8 {
+  margin-right: 62.5% !important; }
+
+.u-sm-after2of3,
+.u-sm-after4of6,
+.u-sm-after8of12 {
+  margin-right: calc(100% * 2 / 3) !important; }
+
+.u-sm-after7of10 {
+  margin-right: 70% !important; }
+
+.u-sm-after3of4,
+.u-sm-after6of8,
+.u-sm-after9of12 {
+  margin-right: 75% !important; }
+
+.u-sm-after4of5,
+.u-sm-after8of10 {
+  margin-right: 80% !important; }
+
+.u-sm-after5of6,
+.u-sm-after10of12 {
+  margin-right: calc(100% * 5 / 6) !important; }
+
+.u-sm-after7of8 {
+  margin-right: 87.5% !important; }
+
+.u-sm-after9of10 {
+  margin-right: 90% !important; }
+
+.u-sm-after11of12 {
+  margin-right: calc(100% * 11 / 12) !important; }
+
+/**
+ * Breakpoint 2 (medium)
+ *
+ * Specify the proportional offset after an element.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 4, 5, 6, 8, 10, 12 section
+ */
+.u-md-afterNone {
+  margin-left: 0 !important; }
+
+.u-md-after1of12 {
+  margin-right: calc(100% * 1 / 12) !important; }
+
+.u-md-after1of10 {
+  margin-right: 10% !important; }
+
+.u-md-after1of8 {
+  margin-right: 12.5% !important; }
+
+.u-md-after1of6,
+.u-md-after2of12 {
+  margin-right: calc(100% * 1 / 6) !important; }
+
+.u-md-after1of5,
+.u-md-after2of10 {
+  margin-right: 20% !important; }
+
+.u-md-after1of4,
+.u-md-after2of8,
+.u-md-after3of12 {
+  margin-right: 25% !important; }
+
+.u-md-after3of10 {
+  margin-right: 30% !important; }
+
+.u-md-after1of3,
+.u-md-after2of6,
+.u-md-after4of12 {
+  margin-right: calc(100% * 1 / 3) !important; }
+
+.u-md-after3of8 {
+  margin-right: 37.5% !important; }
+
+.u-md-after2of5,
+.u-md-after4of10 {
+  margin-right: 40% !important; }
+
+.u-md-after5of12 {
+  margin-right: calc(100% * 5 / 12) !important; }
+
+.u-md-after1of2,
+.u-md-after2of4,
+.u-md-after3of6,
+.u-md-after4of8,
+.u-md-after5of10,
+.u-md-after6of12 {
+  margin-right: 50% !important; }
+
+.u-md-after7of12 {
+  margin-right: calc(100% * 7 / 12) !important; }
+
+.u-md-after3of5,
+.u-md-after6of10 {
+  margin-right: 60% !important; }
+
+.u-md-after5of8 {
+  margin-right: 62.5% !important; }
+
+.u-md-after2of3,
+.u-md-after4of6,
+.u-md-after8of12 {
+  margin-right: calc(100% * 2 / 3) !important; }
+
+.u-md-after7of10 {
+  margin-right: 70% !important; }
+
+.u-md-after3of4,
+.u-md-after6of8,
+.u-md-after9of12 {
+  margin-right: 75% !important; }
+
+.u-md-after4of5,
+.u-md-after8of10 {
+  margin-right: 80% !important; }
+
+.u-md-after5of6,
+.u-md-after10of12 {
+  margin-right: calc(100% * 5 / 6) !important; }
+
+.u-md-after7of8 {
+  margin-right: 87.5% !important; }
+
+.u-md-after9of10 {
+  margin-right: 90% !important; }
+
+.u-md-after11of12 {
+  margin-right: calc(100% * 11 / 12) !important; }
+
+/**
+ * Breakpoint 3 (large)
+ *
+ * Specify the proportional offset after an element.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 4, 5, 6, 8, 10, 12 section
+ */
+.u-lg-afterNone {
+  margin-left: 0 !important; }
+
+.u-lg-after1of12 {
+  margin-right: calc(100% * 1 / 12) !important; }
+
+.u-lg-after1of10 {
+  margin-right: 10% !important; }
+
+.u-lg-after1of8 {
+  margin-right: 12.5% !important; }
+
+.u-lg-after1of6,
+.u-lg-after2of12 {
+  margin-right: calc(100% * 1 / 6) !important; }
+
+.u-lg-after1of5,
+.u-lg-after2of10 {
+  margin-right: 20% !important; }
+
+.u-lg-after1of4,
+.u-lg-after2of8,
+.u-lg-after3of12 {
+  margin-right: 25% !important; }
+
+.u-lg-after3of10 {
+  margin-right: 30% !important; }
+
+.u-lg-after1of3,
+.u-lg-after2of6,
+.u-lg-after4of12 {
+  margin-right: calc(100% * 1 / 3) !important; }
+
+.u-lg-after3of8 {
+  margin-right: 37.5% !important; }
+
+.u-lg-after2of5,
+.u-lg-after4of10 {
+  margin-right: 40% !important; }
+
+.u-lg-after5of12 {
+  margin-right: calc(100% * 5 / 12) !important; }
+
+.u-lg-after1of2,
+.u-lg-after2of4,
+.u-lg-after3of6,
+.u-lg-after4of8,
+.u-lg-after5of10,
+.u-lg-after6of12 {
+  margin-right: 50% !important; }
+
+.u-lg-after7of12 {
+  margin-right: calc(100% * 7 / 12) !important; }
+
+.u-lg-after3of5,
+.u-lg-after6of10 {
+  margin-right: 60% !important; }
+
+.u-lg-after5of8 {
+  margin-right: 62.5% !important; }
+
+.u-lg-after2of3,
+.u-lg-after4of6,
+.u-lg-after8of12 {
+  margin-right: calc(100% * 2 / 3) !important; }
+
+.u-lg-after7of10 {
+  margin-right: 70% !important; }
+
+.u-lg-after3of4,
+.u-lg-after6of8,
+.u-lg-after9of12 {
+  margin-right: 75% !important; }
+
+.u-lg-after4of5,
+.u-lg-after8of10 {
+  margin-right: 80% !important; }
+
+.u-lg-after5of6,
+.u-lg-after10of12 {
+  margin-right: calc(100% * 5 / 6) !important; }
+
+.u-lg-after7of8 {
+  margin-right: 87.5% !important; }
+
+.u-lg-after9of10 {
+  margin-right: 90% !important; }
+
+.u-lg-after11of12 {
+  margin-right: calc(100% * 11 / 12) !important; }
+
+/**
+ * Specify the proportional offset before an object.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 3, 4, 5, 6, 8, 10, 12 section
+ */
+.u-before1of24 {
+  margin-left: calc(100% * 1 / 24) !important; }
+
+.u-before1of12 {
+  margin-left: calc(100% * 1 / 12) !important; }
+
+.u-before1of10 {
+  margin-left: 10% !important; }
+
+.u-before1of8 {
+  margin-left: 12.5% !important; }
+
+.u-before1of6,
+.u-before2of12 {
+  margin-left: calc(100% * 1 / 6) !important; }
+
+.u-before1of5,
+.u-before2of10 {
+  margin-left: 20% !important; }
+
+.u-before1of4,
+.u-before2of8,
+.u-before3of12 {
+  margin-left: 25% !important; }
+
+.u-before3of10 {
+  margin-left: 30% !important; }
+
+.u-before1of3,
+.u-before2of6,
+.u-before4of12 {
+  margin-left: calc(100% * 1 / 3) !important; }
+
+.u-before3of8 {
+  margin-left: 37.5% !important; }
+
+.u-before2of5,
+.u-before4of10 {
+  margin-left: 40% !important; }
+
+.u-before5of12 {
+  margin-left: calc(100% * 5 / 12) !important; }
+
+.u-before1of2,
+.u-before2of4,
+.u-before3of6,
+.u-before4of8,
+.u-before5of10,
+.u-before6of12 {
+  margin-left: 50% !important; }
+
+.u-before7of12 {
+  margin-left: calc(100% * 7 / 12) !important; }
+
+.u-before3of5,
+.u-before6of10 {
+  margin-left: 60% !important; }
+
+.u-before5of8 {
+  margin-left: 62.5% !important; }
+
+.u-before2of3,
+.u-before4of6,
+.u-before8of12 {
+  margin-left: calc(100% * 2 / 3) !important; }
+
+.u-before7of10 {
+  margin-left: 70% !important; }
+
+.u-before3of4,
+.u-before6of8,
+.u-before9of12 {
+  margin-left: 75% !important; }
+
+.u-before4of5,
+.u-before8of10 {
+  margin-left: 80% !important; }
+
+.u-before5of6,
+.u-before10of12 {
+  margin-left: calc(100% * 5 / 6) !important; }
+
+.u-before7of8 {
+  margin-left: 87.5% !important; }
+
+.u-before9of10 {
+  margin-left: 90% !important; }
+
+.u-before11of12 {
+  margin-left: calc(100% * 11 / 12) !important; }
+
+/**
+ * Breakpoint 1 (small)
+ *
+ * Specify the proportional offset before an element.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 3, 4, 5, 6, 8, 10, 12 section
+ */
+.u-sm-beforeNone {
+  margin-left: 0 !important; }
+
+.u-sm-before1of12 {
+  margin-left: calc(100% * 1 / 12) !important; }
+
+.u-sm-before1of10 {
+  margin-left: 10% !important; }
+
+.u-sm-before1of8 {
+  margin-left: 12.5% !important; }
+
+.u-sm-before1of6,
+.u-sm-before2of12 {
+  margin-left: calc(100% * 1 / 6) !important; }
+
+.u-sm-before1of5,
+.u-sm-before2of10 {
+  margin-left: 20% !important; }
+
+.u-sm-before1of4,
+.u-sm-before2of8,
+.u-sm-before3of12 {
+  margin-left: 25% !important; }
+
+.u-sm-before3of10 {
+  margin-left: 30% !important; }
+
+.u-sm-before1of3,
+.u-sm-before2of6,
+.u-sm-before4of12 {
+  margin-left: calc(100% * 1 / 3) !important; }
+
+.u-sm-before3of8 {
+  margin-left: 37.5% !important; }
+
+.u-sm-before2of5,
+.u-sm-before4of10 {
+  margin-left: 40% !important; }
+
+.u-sm-before5of12 {
+  margin-left: calc(100% * 5 / 12) !important; }
+
+.u-sm-before1of2,
+.u-sm-before2of4,
+.u-sm-before3of6,
+.u-sm-before4of8,
+.u-sm-before5of10,
+.u-sm-before6of12 {
+  margin-left: 50% !important; }
+
+.u-sm-before7of12 {
+  margin-left: calc(100% * 7 / 12) !important; }
+
+.u-sm-before3of5,
+.u-sm-before6of10 {
+  margin-left: 60% !important; }
+
+.u-sm-before5of8 {
+  margin-left: 62.5% !important; }
+
+.u-sm-before2of3,
+.u-sm-before4of6,
+.u-sm-before8of12 {
+  margin-left: calc(100% * 2 / 3) !important; }
+
+.u-sm-before7of10 {
+  margin-left: 70% !important; }
+
+.u-sm-before3of4,
+.u-sm-before6of8,
+.u-sm-before9of12 {
+  margin-left: 75% !important; }
+
+.u-sm-before4of5,
+.u-sm-before8of10 {
+  margin-left: 80% !important; }
+
+.u-sm-before5of6,
+.u-sm-before10of12 {
+  margin-left: calc(100% * 5 / 6) !important; }
+
+.u-sm-before7of8 {
+  margin-left: 87.5% !important; }
+
+.u-sm-before9of10 {
+  margin-left: 90% !important; }
+
+.u-sm-before11of12 {
+  margin-left: calc(100% * 11 / 12) !important; }
+
+/**
+ * Breakpoint 2 (medium)
+ *
+ * Specify the proportional offset before an element.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 3, 4, 5, 6, 8, 10, 12 section
+ */
+.u-md-beforeNone {
+  margin-left: 0 !important; }
+
+.u-md-before1of12 {
+  margin-left: calc(100% * 1 / 12) !important; }
+
+.u-md-before1of10 {
+  margin-left: 10% !important; }
+
+.u-md-before1of8 {
+  margin-left: 12.5% !important; }
+
+.u-md-before1of6,
+.u-md-before2of12 {
+  margin-left: calc(100% * 1 / 6) !important; }
+
+.u-md-before1of5,
+.u-md-before2of10 {
+  margin-left: 20% !important; }
+
+.u-md-before1of4,
+.u-md-before2of8,
+.u-md-before3of12 {
+  margin-left: 25% !important; }
+
+.u-md-before3of10 {
+  margin-left: 30% !important; }
+
+.u-md-before1of3,
+.u-md-before2of6,
+.u-md-before4of12 {
+  margin-left: calc(100% * 1 / 3) !important; }
+
+.u-md-before3of8 {
+  margin-left: 37.5% !important; }
+
+.u-md-before2of5,
+.u-md-before4of10 {
+  margin-left: 40% !important; }
+
+.u-md-before5of12 {
+  margin-left: calc(100% * 5 / 12) !important; }
+
+.u-md-before1of2,
+.u-md-before2of4,
+.u-md-before3of6,
+.u-md-before4of8,
+.u-md-before5of10,
+.u-md-before6of12 {
+  margin-left: 50% !important; }
+
+.u-md-before7of12 {
+  margin-left: calc(100% * 7 / 12) !important; }
+
+.u-md-before3of5,
+.u-md-before6of10 {
+  margin-left: 60% !important; }
+
+.u-md-before5of8 {
+  margin-left: 62.5% !important; }
+
+.u-md-before2of3,
+.u-md-before4of6,
+.u-md-before8of12 {
+  margin-left: calc(100% * 2 / 3) !important; }
+
+.u-md-before7of10 {
+  margin-left: 70% !important; }
+
+.u-md-before3of4,
+.u-md-before6of8,
+.u-md-before9of12 {
+  margin-left: 75% !important; }
+
+.u-md-before4of5,
+.u-md-before8of10 {
+  margin-left: 80% !important; }
+
+.u-md-before5of6,
+.u-md-before10of12 {
+  margin-left: calc(100% * 5 / 6) !important; }
+
+.u-md-before7of8 {
+  margin-left: 87.5% !important; }
+
+.u-md-before9of10 {
+  margin-left: 90% !important; }
+
+.u-md-before11of12 {
+  margin-left: calc(100% * 11 / 12) !important; }
+
+/**
+ * Breakpoin 3 (large)
+ *
+ * Specify the proportional offset before an element.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 3, 4, 5, 6, 8, 10, 12 section
+ */
+.u-lg-beforeNone {
+  margin-left: 0 !important; }
+
+.u-lg-before1of12 {
+  margin-left: calc(100% * 1 / 12) !important; }
+
+.u-lg-before1of10 {
+  margin-left: 10% !important; }
+
+.u-lg-before1of8 {
+  margin-left: 12.5% !important; }
+
+.u-lg-before1of6,
+.u-lg-before2of12 {
+  margin-left: calc(100% * 1 / 6) !important; }
+
+.u-lg-before1of5,
+.u-lg-before2of10 {
+  margin-left: 20% !important; }
+
+.u-lg-before1of4,
+.u-lg-before2of8,
+.u-lg-before3of12 {
+  margin-left: 25% !important; }
+
+.u-lg-before3of10 {
+  margin-left: 30% !important; }
+
+.u-lg-before1of3,
+.u-lg-before2of6,
+.u-lg-before4of12 {
+  margin-left: calc(100% * 1 / 3) !important; }
+
+.u-lg-before3of8 {
+  margin-left: 37.5% !important; }
+
+.u-lg-before2of5,
+.u-lg-before4of10 {
+  margin-left: 40% !important; }
+
+.u-lg-before5of12 {
+  margin-left: calc(100% * 5 / 12) !important; }
+
+.u-lg-before1of2,
+.u-lg-before2of4,
+.u-lg-before3of6,
+.u-lg-before4of8,
+.u-lg-before5of10,
+.u-lg-before6of12 {
+  margin-left: 50% !important; }
+
+.u-lg-before7of12 {
+  margin-left: calc(100% * 7 / 12) !important; }
+
+.u-lg-before3of5,
+.u-lg-before6of10 {
+  margin-left: 60% !important; }
+
+.u-lg-before5of8 {
+  margin-left: 62.5% !important; }
+
+.u-lg-before2of3,
+.u-lg-before4of6,
+.u-lg-before8of12 {
+  margin-left: calc(100% * 2 / 3) !important; }
+
+.u-lg-before7of10 {
+  margin-left: 70% !important; }
+
+.u-lg-before3of4,
+.u-lg-before6of8,
+.u-lg-before9of12 {
+  margin-left: 75% !important; }
+
+.u-lg-before4of5,
+.u-lg-before8of10 {
+  margin-left: 80% !important; }
+
+.u-lg-before5of6,
+.u-lg-before10of12 {
+  margin-left: calc(100% * 5 / 6) !important; }
+
+.u-lg-before7of8 {
+  margin-left: 87.5% !important; }
+
+.u-lg-before9of10 {
+  margin-left: 90% !important; }
+
+.u-lg-before11of12 {
+  margin-left: calc(100% * 11 / 12) !important; }
+
+.u-posAbsolute {
+  position: absolute !important; }
+
+/**
+ * Pins to all corners by default. But when a width and/or height are
+ * provided, the element will be centered in its nearest relatively-positioned
+ * ancestor.
+ */
+.u-posAbsoluteCenter {
+  bottom: 0 !important;
+  left: 0 !important;
+  margin: auto !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: 0 !important; }
+
+/**
+ * 1. Make sure fixed elements are promoted into a new layer, for performance
+ *    reasons.
+ */
+.u-posFixed {
+  position: fixed !important;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  /* 1 */ }
+
+.u-posRelative {
+  position: relative !important; }
+
+.u-posStatic {
+  position: static !important; }
+
+/* Intrinsic widths
+   ========================================================================== */
+/**
+ * Make an element shrink wrap its content.
+ */
+.u-sizeFit,
+.u-sizeFitAlt {
+  display: block !important;
+  float: left !important;
+  width: auto !important; }
+
+.u-sizeFitAlt {
+  float: right !important; }
+
+/**
+ * Make an element fill the remaining space.
+ * N.B. This will hide overflow.
+ */
+.u-sizeFill {
+  display: block !important;
+  overflow: hidden !important;
+  width: auto !important; }
+
+/**
+ * An alternative method to make an element fill the remaining space.
+ * N.B. Do not use if child elements might be wider than the remaining space.
+ * In Chrome, Safari, and Firefox it results in undesired layout.
+ */
+.u-sizeFillAlt {
+  display: table-cell !important;
+  max-width: 100% !important;
+  width: 10000px !important; }
+
+/**
+ * Make an element the width of its parent.
+ */
+.u-sizeFull {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 100% !important; }
+
+/* Proportional widths
+   ========================================================================== */
+/**
+ * Specify the proportional width of an object.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 3, 4, 5, 6, 8, 10, 12 part
+ */
+.u-size1of24 {
+  width: calc(100% * 1 / 24) !important; }
+
+.u-size1of12 {
+  width: calc(100% * 1 / 12) !important; }
+
+.u-size1of10 {
+  width: 10% !important; }
+
+.u-size1of8 {
+  width: 12.5% !important; }
+
+.u-size1of6,
+.u-size2of12 {
+  width: calc(100% * 1 / 6) !important; }
+
+.u-size1of5,
+.u-size2of10 {
+  width: 20% !important; }
+
+.u-size1of4,
+.u-size2of8,
+.u-size3of12 {
+  width: 25% !important; }
+
+.u-size3of10 {
+  width: 30% !important; }
+
+.u-size1of3,
+.u-size2of6,
+.u-size4of12 {
+  width: calc(100% * 1 / 3) !important; }
+
+.u-size3of8 {
+  width: 37.5% !important; }
+
+.u-size2of5,
+.u-size4of10 {
+  width: 40% !important; }
+
+.u-size5of12 {
+  width: calc(100% * 5 / 12) !important; }
+
+.u-size1of2,
+.u-size2of4,
+.u-size3of6,
+.u-size4of8,
+.u-size5of10,
+.u-size6of12 {
+  width: 50% !important; }
+
+.u-size7of12 {
+  width: calc(100% * 7 / 12) !important; }
+
+.u-size3of5,
+.u-size6of10 {
+  width: 60% !important; }
+
+.u-size5of8 {
+  width: 62.5% !important; }
+
+.u-size2of3,
+.u-size4of6,
+.u-size8of12 {
+  width: calc(100% * 2 / 3) !important; }
+
+.u-size7of10 {
+  width: 70% !important; }
+
+.u-size3of4,
+.u-size6of8,
+.u-size9of12 {
+  width: 75% !important; }
+
+.u-size4of5,
+.u-size8of10 {
+  width: 80% !important; }
+
+.u-size5of6,
+.u-size10of12 {
+  width: calc(100% * 5 / 6) !important; }
+
+.u-size7of8 {
+  width: 87.5% !important; }
+
+.u-size2of9 {
+  width: calc(100% * 2 / 9) !important; }
+
+.u-size9of10 {
+  width: 90% !important; }
+
+.u-size11of12 {
+  width: calc(100% * 11 / 12) !important; }
+
+/* Intrinsic widths: breakpoint 1 (small)
+   ========================================================================== */
+/**
+ * Make an element shrink wrap its content.
+ */
+.u-sm-sizeFit,
+.u-sm-sizeFitAlt {
+  display: block !important;
+  float: left !important;
+  width: auto !important; }
+
+.u-sm-sizeFitAlt {
+  float: right !important; }
+
+/**
+ * Make an element fill the remaining space.
+ * N.B. This will hide overflow.
+ */
+.u-sm-sizeFill {
+  display: block !important;
+  overflow: hidden !important;
+  width: auto !important; }
+
+/**
+ * An alternative method to make an element fill the remaining space.
+ * N.B. Do not use if child elements might be wider than the remaining space.
+ * In Chrome, Safari, and Firefox it results in undesired layout.
+ */
+.u-sm-sizeFillAlt {
+  display: table-cell !important;
+  max-width: 100% !important;
+  width: 10000px !important; }
+
+/**
+ * Make an element the width of its parent.
+ */
+.u-sm-sizeFull {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 100% !important; }
+
+/* Proportional widths: breakpoint 1 (small)
+   ========================================================================== */
+/**
+ * Specify the proportional width of an object.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 3, 4, 5, 6, 8, 10, 12 part
+ */
+.u-sm-size1of12 {
+  width: calc(100% * 1 / 12) !important; }
+
+.u-sm-size1of10 {
+  width: 10% !important; }
+
+.u-sm-size1of8 {
+  width: 12.5% !important; }
+
+.u-sm-size1of6,
+.u-sm-size2of12 {
+  width: calc(100% * 1 / 6) !important; }
+
+.u-sm-size1of5,
+.u-sm-size2of10 {
+  width: 20% !important; }
+
+.u-sm-size1of4,
+.u-sm-size2of8,
+.u-sm-size3of12 {
+  width: 25% !important; }
+
+.u-sm-size3of10 {
+  width: 30% !important; }
+
+.u-sm-size1of3,
+.u-sm-size2of6,
+.u-sm-size4of12 {
+  width: calc(100% * 1 / 3) !important; }
+
+.u-sm-size3of8 {
+  width: 37.5% !important; }
+
+.u-sm-size2of5,
+.u-sm-size4of10 {
+  width: 40% !important; }
+
+.u-sm-size5of12 {
+  width: calc(100% * 5 / 12) !important; }
+
+.u-sm-size1of2,
+.u-sm-size2of4,
+.u-sm-size3of6,
+.u-sm-size4of8,
+.u-sm-size5of10,
+.u-sm-size6of12 {
+  width: 50% !important; }
+
+.u-sm-size7of12 {
+  width: calc(100% * 7 / 12) !important; }
+
+.u-sm-size3of5,
+.u-sm-size6of10 {
+  width: 60% !important; }
+
+.u-sm-size5of8 {
+  width: 62.5% !important; }
+
+.u-sm-size2of3,
+.u-sm-size4of6,
+.u-sm-size8of12 {
+  width: calc(100% * 2 / 3) !important; }
+
+.u-sm-size7of10 {
+  width: 70% !important; }
+
+.u-sm-size3of4,
+.u-sm-size6of8,
+.u-sm-size9of12 {
+  width: 75% !important; }
+
+.u-sm-size4of5,
+.u-sm-size8of10 {
+  width: 80% !important; }
+
+.u-sm-size5of6,
+.u-sm-size10of12 {
+  width: calc(100% * 5 / 6) !important; }
+
+.u-sm-size7of8 {
+  width: 87.5% !important; }
+
+.u-sm-size9of10 {
+  width: 90% !important; }
+
+.u-sm-size11of12 {
+  width: calc(100% * 11 / 12) !important; }
+
+/* Intrinsic widths  breakpoint 2 (medium)
+   ========================================================================== */
+/**
+ * Make an element shrink wrap its content.
+ */
+.u-md-sizeFit,
+.u-md-sizeFitAlt {
+  display: block !important;
+  float: left !important;
+  width: auto !important; }
+
+.u-md-sizeFitAlt {
+  float: right !important; }
+
+/**
+ * Make an element fill the remaining space.
+ * N.B. This will hide overflow.
+ */
+.u-md-sizeFill {
+  display: block !important;
+  overflow: hidden !important;
+  width: auto !important; }
+
+/**
+ * An alternative method to make an element fill the remaining space.
+ * N.B. Do not use if child elements might be wider than the remaining space.
+ * In Chrome, Safari, and Firefox it results in undesired layout.
+ */
+.u-md-sizeFillAlt {
+  display: table-cell !important;
+  max-width: 100% !important;
+  width: 10000px !important; }
+
+/**
+ * Make an element the width of its parent.
+ */
+.u-md-sizeFull {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 100% !important; }
+
+/* Proportional widths: breakpoint 2 (medium)
+   ========================================================================== */
+/**
+ * Specify the proportional width of an object.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 3, 4, 5, 6, 8, 10, 12 part
+ */
+.u-md-size1of12 {
+  width: calc(100% * 1 / 12) !important; }
+
+.u-md-size1of10 {
+  width: 10% !important; }
+
+.u-md-size1of8 {
+  width: 12.5% !important; }
+
+.u-md-size1of6,
+.u-md-size2of12 {
+  width: calc(100% * 1 / 6) !important; }
+
+.u-md-size1of5,
+.u-md-size2of10 {
+  width: 20% !important; }
+
+.u-md-size1of4,
+.u-md-size2of8,
+.u-md-size3of12 {
+  width: 25% !important; }
+
+.u-md-size3of10 {
+  width: 30% !important; }
+
+.u-md-size1of3,
+.u-md-size2of6,
+.u-md-size4of12 {
+  width: calc(100% * 1 / 3) !important; }
+
+.u-md-size3of8 {
+  width: 37.5% !important; }
+
+.u-md-size2of5,
+.u-md-size4of10 {
+  width: 40% !important; }
+
+.u-md-size5of12 {
+  width: calc(100% * 5 / 12) !important; }
+
+.u-md-size1of2,
+.u-md-size2of4,
+.u-md-size3of6,
+.u-md-size4of8,
+.u-md-size5of10,
+.u-md-size6of12 {
+  width: 50% !important; }
+
+.u-md-size7of12 {
+  width: calc(100% * 7 / 12) !important; }
+
+.u-md-size3of5,
+.u-md-size6of10 {
+  width: 60% !important; }
+
+.u-md-size5of8 {
+  width: 62.5% !important; }
+
+.u-md-size2of3,
+.u-md-size4of6,
+.u-md-size8of12 {
+  width: calc(100% * 2 / 3) !important; }
+
+.u-md-size7of10 {
+  width: 70% !important; }
+
+.u-md-size3of4,
+.u-md-size6of8,
+.u-md-size9of12 {
+  width: 75% !important; }
+
+.u-md-size4of5,
+.u-md-size8of10 {
+  width: 80% !important; }
+
+.u-md-size5of6,
+.u-md-size10of12 {
+  width: calc(100% * 5 / 6) !important; }
+
+.u-md-size7of8 {
+  width: 87.5% !important; }
+
+.u-md-size9of10 {
+  width: 90% !important; }
+
+.u-md-size11of12 {
+  width: calc(100% * 11 / 12) !important; }
+
+/* Intrinsic widths  breakpoint 3 (large)
+   ========================================================================== */
+@media (min-width: 1200px) {
+  /**
+ * Make an element shrink wrap its content.
+ */
+  .u-lg-sizeFit,
+  .u-lg-sizeFitAlt {
+    display: block !important;
+    float: left !important;
+    width: auto !important; }
+  .u-lg-sizeFitAlt {
+    float: right !important; }
+  /**
+ * Make an element fill the remaining space.
+ * N.B. This will hide overflow.
+ */
+  .u-lg-sizeFill {
+    display: block !important;
+    overflow: hidden !important;
+    width: auto !important; }
+  /**
+ * An alternative method to make an element fill the remaining space.
+ * N.B. Do not use if child elements might be wider than the remaining space.
+ * In Chrome, Safari, and Firefox it results in undesired layout.
+ */
+  .u-lg-sizeFillAlt {
+    display: table-cell !important;
+    max-width: 100% !important;
+    width: 10000px !important; }
+  /**
+ * Make an element the width of its parent.
+ */
+  .u-lg-sizeFull {
+    box-sizing: border-box !important;
+    display: block !important;
+    width: 100% !important; }
+  /* Proportional widths: breakpoint 3 (large)
+   ========================================================================== */
+  /**
+ * Specify the proportional width of an object.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 3, 4, 5, 6, 8, 10, 12 part
+ */
+  .u-lg-size1of12 {
+    width: calc(100% * 1 / 12) !important; }
+  .u-lg-size1of10 {
+    width: 10% !important; }
+  .u-lg-size1of8 {
+    width: 12.5% !important; }
+  .u-lg-size1of6,
+  .u-lg-size2of12 {
+    width: calc(100% * 1 / 6) !important; }
+  .u-lg-size1of5,
+  .u-lg-size2of10 {
+    width: 20% !important; }
+  .u-lg-size1of4,
+  .u-lg-size2of8,
+  .u-lg-size3of12 {
+    width: 25% !important; }
+  .u-lg-size3of10 {
+    width: 30% !important; }
+  .u-lg-size1of3,
+  .u-lg-size2of6,
+  .u-lg-size4of12 {
+    width: calc(100% * 1 / 3) !important; }
+  .u-lg-size3of8 {
+    width: 37.5% !important; }
+  .u-lg-size2of5,
+  .u-lg-size4of10 {
+    width: 40% !important; }
+  .u-lg-size5of12 {
+    width: calc(100% * 5 / 12) !important; }
+  .u-lg-size1of2,
+  .u-lg-size2of4,
+  .u-lg-size3of6,
+  .u-lg-size4of8,
+  .u-lg-size5of10,
+  .u-lg-size6of12 {
+    width: 50% !important; }
+  .u-lg-size7of12 {
+    width: calc(100% * 7 / 12) !important; }
+  .u-lg-size3of5,
+  .u-lg-size6of10 {
+    width: 60% !important; }
+  .u-lg-size5of8 {
+    width: 62.5% !important; }
+  .u-lg-size2of3,
+  .u-lg-size4of6,
+  .u-lg-size8of12 {
+    width: calc(100% * 2 / 3) !important; }
+  .u-lg-size7of10 {
+    width: 70% !important; }
+  .u-lg-size3of4,
+  .u-lg-size6of8,
+  .u-lg-size9of12 {
+    width: 75% !important; }
+  .u-lg-size4of5,
+  .u-lg-size8of10 {
+    width: 80% !important; }
+  .u-lg-size5of6,
+  .u-lg-size10of12 {
+    width: calc(100% * 5 / 6) !important; }
+  .u-lg-size7of8 {
+    width: 87.5% !important; }
+  .u-lg-size9of10 {
+    width: 90% !important; }
+  .u-lg-size11of12 {
+    width: calc(100% * 11 / 12) !important; } }
+
+/*! suit-utils-text v0.3.0 | MIT License | github.com/suitcss */
+/**
+ * Word breaking
+ *
+ * Break strings when their length exceeds the width of their container.
+ */
+.u-textBreak {
+  word-wrap: break-word !important; }
+
+/**
+ * Horizontal text alignment
+ */
+.u-textCenter {
+  text-align: center !important; }
+
+.u-textLeft {
+  text-align: left !important; }
+
+.u-textRight {
+  text-align: right !important; }
+
+/**
+ * Inherit the ancestor's text color.
+ */
+.u-textInheritColor {
+  color: inherit !important; }
+
+/**
+ * Prevent whitespace wrapping
+ */
+.u-textNoWrap {
+  white-space: nowrap !important; }
+
+/**
+ * Text truncation
+ *
+ * Prevent text from wrapping onto multiple lines, and truncate with an
+ * ellipsis.
+ *
+ * 1. Ensure that the node has a maximum width after which truncation can
+ *    occur.
+ * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+ *    nodes.
+ */
+.u-textTruncate {
+  max-width: 100%;
+  /* 1 */
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
+  /* 2 */ }
+
+.u-textMuted {
+  color: #a9a9a9 !important; }
+
+.u-textMuted2 {
+  color: #A7B6BC !important; }
+
+.u-textFaint {
+  color: #686768 !important; }
+
+.u-textWarning {
+  color: #e03854 !important; }
+
+.u-textSuccess {
+  color: #6e917c !important; }
+
+.u-lowLineHeight {
+  line-height: 1.3; }
+
+.u-resetHeight {
+  line-height: 1; }
+
+.u-newCustomersColor {
+  color: #70BADE; }
+
+.u-returningCustomersColor {
+  color: #7E9A83; }
+
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+ */
+/**
+     * Margin helper classes.
+     *
+     * Add margins.
+     */
+.u-m {
+  margin: 24px !important; }
+
+.u-mt {
+  margin-top: 24px !important; }
+
+.u-mr {
+  margin-right: 24px !important; }
+
+.u-mb {
+  margin-bottom: 24px !important; }
+
+.u-ml {
+  margin-left: 24px !important; }
+
+.u-mh {
+  margin-right: 24px !important;
+  margin-left: 24px !important; }
+
+.u-mv {
+  margin-top: 24px !important;
+  margin-bottom: 24px !important; }
+
+/**
+     * Add tiny margins.
+     */
+.u-m-- {
+  margin: 6px !important; }
+
+.u-mt-- {
+  margin-top: 6px !important; }
+
+.u-mr-- {
+  margin-right: 6px !important; }
+
+.u-mb-- {
+  margin-bottom: 6px !important; }
+
+.u-ml-- {
+  margin-left: 6px !important; }
+
+.u-mh-- {
+  margin-right: 6px !important;
+  margin-left: 6px !important; }
+
+.u-mv-- {
+  margin-top: 6px !important;
+  margin-bottom: 6px !important; }
+
+/**
+     * Add small margins.
+     */
+.u-m- {
+  margin: 12px !important; }
+
+.u-mt- {
+  margin-top: 12px !important; }
+
+.u-mr- {
+  margin-right: 12px !important; }
+
+.u-mb- {
+  margin-bottom: 12px !important; }
+
+.u-ml- {
+  margin-left: 12px !important; }
+
+.u-mh- {
+  margin-right: 12px !important;
+  margin-left: 12px !important; }
+
+.u-mv- {
+  margin-top: 12px !important;
+  margin-bottom: 12px !important; }
+
+/**
+     * Add large margins.
+     */
+.u-m\+ {
+  margin: 48px !important; }
+
+.u-mt\+ {
+  margin-top: 48px !important; }
+
+.u-mr\+ {
+  margin-right: 48px !important; }
+
+.u-mb\+ {
+  margin-bottom: 48px !important; }
+
+.u-ml\+ {
+  margin-left: 48px !important; }
+
+.u-mh\+ {
+  margin-right: 48px !important;
+  margin-left: 48px !important; }
+
+.u-mv\+ {
+  margin-top: 48px !important;
+  margin-bottom: 48px !important; }
+
+/**
+     * Add huge margins.
+     */
+.u-m\+\+ {
+  margin: 96px !important; }
+
+.u-mt\+\+ {
+  margin-top: 96px !important; }
+
+.u-mr\+\+ {
+  margin-right: 96px !important; }
+
+.u-mb\+\+ {
+  margin-bottom: 96px !important; }
+
+.u-ml\+\+ {
+  margin-left: 96px !important; }
+
+.u-mh\+\+ {
+  margin-right: 96px !important;
+  margin-left: 96px !important; }
+
+.u-mv\+\+ {
+  margin-top: 96px !important;
+  margin-bottom: 96px !important; }
+
+/**
+     * Remove margins.
+     */
+.u-m0 {
+  margin: 0 !important; }
+
+.u-mt0 {
+  margin-top: 0 !important; }
+
+.u-mr0 {
+  margin-right: 0 !important; }
+
+.u-mb0 {
+  margin-bottom: 0 !important; }
+
+.u-ml0 {
+  margin-left: 0 !important; }
+
+.u-mh0 {
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
+
+.u-mv0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
+/**
+     * Negative margins.
+     */
+.u--m {
+  margin: -24px !important; }
+
+.u--mt {
+  margin-top: -24px !important; }
+
+.u--mr {
+  margin-right: -24px !important; }
+
+.u--mb {
+  margin-bottom: -24px !important; }
+
+.u--ml {
+  margin-left: -24px !important; }
+
+.u--mh {
+  margin-right: -24px !important;
+  margin-left: -24px !important; }
+
+.u--mv {
+  margin-top: -24px !important;
+  margin-bottom: -24px !important; }
+
+/**
+     * Tiny negative margins.
+     */
+.u--m-- {
+  margin: -6px !important; }
+
+.u--mt-- {
+  margin-top: -6px !important; }
+
+.u--mr-- {
+  margin-right: -6px !important; }
+
+.u--mb-- {
+  margin-bottom: -6px !important; }
+
+.u--ml-- {
+  margin-left: -6px !important; }
+
+.u--mh-- {
+  margin-right: -6px !important;
+  margin-left: -6px !important; }
+
+.u--mv-- {
+  margin-top: -6px !important;
+  margin-bottom: -6px !important; }
+
+/**
+     * Small negative margins.
+     */
+.u--m- {
+  margin: -12px !important; }
+
+.u--mt- {
+  margin-top: -12px !important; }
+
+.u--mr- {
+  margin-right: -12px !important; }
+
+.u--mb- {
+  margin-bottom: -12px !important; }
+
+.u--ml- {
+  margin-left: -12px !important; }
+
+.u--mh- {
+  margin-right: -12px !important;
+  margin-left: -12px !important; }
+
+.u--mv- {
+  margin-top: -12px !important;
+  margin-bottom: -12px !important; }
+
+/**
+     * Large negative margins.
+     */
+.u--m\+ {
+  margin: -48px !important; }
+
+.u--mt\+ {
+  margin-top: -48px !important; }
+
+.u--mr\+ {
+  margin-right: -48px !important; }
+
+.u--mb\+ {
+  margin-bottom: -48px !important; }
+
+.u--ml\+ {
+  margin-left: -48px !important; }
+
+.u--mh\+ {
+  margin-right: -48px !important;
+  margin-left: -48px !important; }
+
+.u--mv\+ {
+  margin-top: -48px !important;
+  margin-bottom: -48px !important; }
+
+/**
+     * Huge negative margins.
+     */
+.u--m\+\+ {
+  margin: -96px !important; }
+
+.u--mt\+\+ {
+  margin-top: -96px !important; }
+
+.u--mr\+\+ {
+  margin-right: -96px !important; }
+
+.u--mb\+\+ {
+  margin-bottom: -96px !important; }
+
+.u--ml\+\+ {
+  margin-left: -96px !important; }
+
+.u--mh\+\+ {
+  margin-right: -96px !important;
+  margin-left: -96px !important; }
+
+.u--mv\+\+ {
+  margin-top: -96px !important;
+  margin-bottom: -96px !important; }
+
+/**
+     * Padding helper classes.
+     *
+     * Add paddings.
+     */
+.u-p {
+  padding: 24px !important; }
+
+.u-pt {
+  padding-top: 24px !important; }
+
+.u-pr {
+  padding-right: 24px !important; }
+
+.u-pb {
+  padding-bottom: 24px !important; }
+
+.u-pl {
+  padding-left: 24px !important; }
+
+.u-ph {
+  padding-right: 24px !important;
+  padding-left: 24px !important; }
+
+.u-pv {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important; }
+
+/**
+     * Add tiny paddings.
+     */
+.u-p-- {
+  padding: 6px !important; }
+
+.u-pt-- {
+  padding-top: 6px !important; }
+
+.u-pr-- {
+  padding-right: 6px !important; }
+
+.u-pb-- {
+  padding-bottom: 6px !important; }
+
+.u-pl-- {
+  padding-left: 6px !important; }
+
+.u-ph-- {
+  padding-right: 6px !important;
+  padding-left: 6px !important; }
+
+.u-pv-- {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important; }
+
+/**
+     * Add small paddings.
+     */
+.u-p- {
+  padding: 12px !important; }
+
+.u-pt- {
+  padding-top: 12px !important; }
+
+.u-pr- {
+  padding-right: 12px !important; }
+
+.u-pb- {
+  padding-bottom: 12px !important; }
+
+.u-pl- {
+  padding-left: 12px !important; }
+
+.u-ph- {
+  padding-right: 12px !important;
+  padding-left: 12px !important; }
+
+.u-pv- {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important; }
+
+/**
+     * Add large paddings.
+     */
+.u-p\+ {
+  padding: 48px !important; }
+
+.u-pt\+ {
+  padding-top: 48px !important; }
+
+.u-pr\+ {
+  padding-right: 48px !important; }
+
+.u-pb\+ {
+  padding-bottom: 48px !important; }
+
+.u-pl\+ {
+  padding-left: 48px !important; }
+
+.u-ph\+ {
+  padding-right: 48px !important;
+  padding-left: 48px !important; }
+
+.u-pv\+ {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important; }
+
+/**
+     * Add huge paddings.
+     */
+.u-p\+\+ {
+  padding: 96px !important; }
+
+.u-pt\+\+ {
+  padding-top: 96px !important; }
+
+.u-pr\+\+ {
+  padding-right: 96px !important; }
+
+.u-pb\+\+ {
+  padding-bottom: 96px !important; }
+
+.u-pl\+\+ {
+  padding-left: 96px !important; }
+
+.u-ph\+\+ {
+  padding-right: 96px !important;
+  padding-left: 96px !important; }
+
+.u-pv\+\+ {
+  padding-top: 96px !important;
+  padding-bottom: 96px !important; }
+
+/**
+     * Remove paddings.
+     */
+.u-p0 {
+  padding: 0 !important; }
+
+.u-pt0 {
+  padding-top: 0 !important; }
+
+.u-pr0 {
+  padding-right: 0 !important; }
+
+.u-pb0 {
+  padding-bottom: 0 !important; }
+
+.u-pl0 {
+  padding-left: 0 !important; }
+
+.u-ph0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
+.u-pv0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
+/**
+ * Indicate that interaction will result in an (in)action.
+ */
+.u-isActionable {
+  cursor: pointer !important; }
+
+.u-isDisabled {
+  cursor: default !important; }
+
+.u-isDraggable {
+  cursor: move !important; }
+
+/**
+ * Completely remove from the flow and screen readers.
+ */
+.u-isHidden {
+  display: none !important;
+  visibility: hidden !important; }
+
+/**
+ * Display a hidden-by-default element.
+ */
+.u-isShown {
+  display: block !important;
+  visibility: visible !important; }
+
+table.u-isShown {
+  display: table !important; }
+
+tr.u-isShown {
+  display: table-row !important; }
+
+td.u-isShown,
+th.u-isShown {
+  display: table-cell !important; }
+
+/**
+ * Completely remove from the flow but leave available to screen readers.
+ */
+.u-isHiddenVisually {
+  position: absolute !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; }
+
+/**
+ * Control visibility without affecting flow.
+ */
+.u-isInvisible {
+  visibility: hidden !important; }
+
+.u-isVisible {
+  visibility: visible !important; }
+
+.u-isDisabled {
+  opacity: 0.25 !important; }
+
+.u-isDisabled05 {
+  opacity: 0.5 !important; }
+
+/*
+* Is invalid
+*/
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  12.5% {
+    -webkit-transform: translateX(-6px) rotateY(-5deg);
+            transform: translateX(-6px) rotateY(-5deg); }
+  37.5% {
+    -webkit-transform: translateX(5px) rotateY(4deg);
+            transform: translateX(5px) rotateY(4deg); }
+  62.5% {
+    -webkit-transform: translateX(-3px) rotateY(-2deg);
+            transform: translateX(-3px) rotateY(-2deg); }
+  87.5% {
+    -webkit-transform: translateX(2px) rotateY(1deg);
+            transform: translateX(2px) rotateY(1deg); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  12.5% {
+    -webkit-transform: translateX(-6px) rotateY(-5deg);
+            transform: translateX(-6px) rotateY(-5deg); }
+  37.5% {
+    -webkit-transform: translateX(5px) rotateY(4deg);
+            transform: translateX(5px) rotateY(4deg); }
+  62.5% {
+    -webkit-transform: translateX(-3px) rotateY(-2deg);
+            transform: translateX(-3px) rotateY(-2deg); }
+  87.5% {
+    -webkit-transform: translateX(2px) rotateY(1deg);
+            transform: translateX(2px) rotateY(1deg); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+.u-isInvalid {
+  animation: shake 400ms ease-in-out;
+  -webkit-animation: shake 400ms ease-in-out; }
+
+/* indicatior for bg-color */
+@-webkit-keyframes highlight {
+  40% {
+    background-color: #ffff7f; } }
+@keyframes highlight {
+  40% {
+    background-color: #ffff7f; } }
+
+.u-isHighlighted {
+  -webkit-animation-name: highlight;
+          animation-name: highlight;
+  -webkit-animation-duration: 750ms;
+          animation-duration: 750ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1; }
+
+/* indicatior for confirmation bg-color */
+@-webkit-keyframes confirmation {
+  30% {
+    color: #6e917c;
+    background-color: #d5ebdb;
+    border: 1px solid #98c5a7;
+    border-radius: 5px; } }
+@keyframes confirmation {
+  30% {
+    color: #6e917c;
+    background-color: #d5ebdb;
+    border: 1px solid #98c5a7;
+    border-radius: 5px; } }
+
+.u-isConfirmed {
+  -webkit-animation-name: confirmation;
+          animation-name: confirmation;
+  -webkit-animation-duration: 750ms;
+          animation-duration: 750ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out; }
+
+/* element is being shown for brief time */
+.FlashedInitState {
+  opacity: 0;
+  position: absolute !important;
+  left: 0;
+  right: 0; }
+
+@-webkit-keyframes flashed {
+  12% {
+    opacity: 1; }
+  88% {
+    opacity: 1; } }
+
+@keyframes flashed {
+  12% {
+    opacity: 1; }
+  88% {
+    opacity: 1; } }
+
+.u-isFlashed {
+  -webkit-animation-name: flashed;
+          animation-name: flashed;
+  -webkit-animation-duration: 4000ms;
+          animation-duration: 4000ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+/* SlideUp */
+.SlideUp-leave {
+  opacity: 1;
+  max-height: 100px;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  overflow: hidden; }
+
+.SlideUp-leave-active {
+  opacity: 0;
+  max-height: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important; }
+
+.SlideUp-enter {
+  opacity: 0;
+  max-height: 0;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  overflow: hidden; }
+
+.SlideUp-enter-active {
+  opacity: 1;
+  max-height: 150px;
+  overflow: hidden; }
+
+.TransitionGroup * {
+  transition: 1.0s; }
+
+/** @define Arrange */
+/*! suit-arrange v0.4.0 | MIT License | github.com/suitcss */
+/**
+ * This component lets you lay out a row of cells in various ways. You can
+ * specify whether a cell should be wide enough to fit its content, or take up
+ * the remaining space in the row. It's also possible to give all cells an
+ * equal width, and to control their vertical alignment.
+ *
+ * `Arrange` must only contain 'Arrange-sizeFit' and 'Arrange-sizeFill' child
+ * nodes.
+ *
+ * It's recommended that you only use one 'Arrange-sizeFill' per component
+ * instance (unless using the `Arrange--equal` modifier; see below). The
+ * first 'Arrange-sizeFill' in the component's source order will not share the
+ * extra space with any subsequent nodes of that class.
+ *
+ * Example HTML:
+ *
+ * <div class="Arrange [Arrange--middle|Arrange--bottom|Arrange--equal] [Arrange--withGutter]">
+ *   <div class="Arrange-sizeFit">
+ *     [content]
+ *   </div>
+ *   <div class="Arrange-sizeFill">
+ *     [content]
+ *   </div>
+ *   <div class="Arrange-sizeFit">
+ *     [content]
+ *   </div>
+ * </div>
+ */
+/**
+ * 1. Protect against the component expanding beyond the confines of its
+ *    container if properties affecting the box-model are applied to the
+ *    component. Mainly necessary because of (5).
+ * 2. Rely on table layout.
+ * 3. Zero out the default spacing that might be on an element (e.g., `ul`).
+ * 4. Make sure the component fills at least the full width of its parent.
+ * 5. Reset the table-layout algorithm in case a component is nested.
+ */
+.Arrange {
+  box-sizing: border-box;
+  /* 1 */
+  display: table;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  min-width: 100%;
+  /* 4 */
+  padding: 0;
+  /* 3 */
+  table-layout: auto;
+  /* 5 */ }
+
+/**
+ * There are two possible types of child. `sizeFill` will expand to fill all
+ * of the remaining space not filled by `sizeFit` elements.
+ *
+ * 1. Zero out any default spacing that might be on an element (e.g., `li`);
+ *    Margin has no effect when coupled with `display: table-cell`.
+ * 2. All cells are top-aligned by default
+ */
+.Arrange-sizeFill,
+.Arrange-sizeFit {
+  display: table-cell;
+  padding: 0;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/**
+ * Make sure the main content block expands to fill the remaining space.
+ */
+.Arrange-sizeFill {
+  width: 100%; }
+
+/**
+ * Where possible, protect against large images breaking the layout. Prevent them from
+ * exceeding the width of the main content block by making them fluid.
+ *
+ * Only work for all browsers with the `Arrange--equally` variant. For Firefox
+ * and IE to constrain image dimensions for other layouts, large images will
+ * need their width set to `100%`.
+ */
+.Arrange-sizeFill img {
+  height: auto;
+  max-width: 100%; }
+
+/**
+ * Defend against a side-effect of this layout pattern: images in
+ * 'Arrange-sizeFit' cannot be fluid, otherwise they lose their ability to
+ * provide size to a cell.
+ */
+.Arrange-sizeFit img {
+  max-width: none !important;
+  width: auto !important; }
+
+/* Vertical alignment modifiers
+   ========================================================================== */
+.Arrange--middle .Arrange-sizeFill,
+.Arrange--middle .Arrange-sizeFit {
+  vertical-align: middle; }
+
+.Arrange--bottom .Arrange-sizeFill,
+.Arrange--bottom .Arrange-sizeFit {
+  vertical-align: bottom; }
+
+/* Equal-width modifier
+   ========================================================================== */
+/**
+ * This layout algorithm will create equal-width table cells, irrespective of
+ * the width of their content.
+ */
+.Arrange--equal {
+  table-layout: fixed; }
+
+/**
+ * Give the cells an equal width. This value ensures that Arrange is still 100%
+ * wide when gutters are used in conjunctions with equal-width cells.
+ *
+ * It's recommended that only 'Arrange-sizeFill' be used for equal width cells.
+ * Their inner images will automatically be responsive.
+ */
+.Arrange--equal > .Arrange-sizeFill,
+.Arrange--equal > .Arrange-sizeFit {
+  width: 1%; }
+
+/* Gutter modifier
+   ========================================================================== */
+/**
+ * Add a gutter between cells
+ *
+ * NOTE: this can trigger a horizontal scrollbar if the component is as wide as
+ * the viewport. Use padding on a container, or `overflow-x:hidden` to protect
+ * against it.
+ */
+.Arrange--withGutter {
+  margin: 0 calc(-0.5 * var($gutter-size-Arrange)); }
+
+.Arrange--withGutter > .Arrange-sizeFit,
+.Arrange--withGutter > .Arrange-sizeFill {
+  padding: 0 calc(0.5 * var($gutter-size-Arrange)); }
+
+/*! suit-button v3.2.0 | MIT License | github.com/suitcss */
+/* ==========================================================================
+   SUIT: Button
+   ========================================================================== */
+/**
+ * The button classes are best applied to links, buttons, and submit inputs.
+ * These components can be used in forms, as calls to action, or as part of the
+ * general UI of the site/app.
+ *
+ * Recommended use:
+ *
+ * <a class="Button [Button--modifier]" role="button" href="[url]">Button text</a>
+ * <button class="Button [Button--modifier]" type="submit">Button text</button>
+ * <input class="Button [Button--modifier]" type="submit" value="Button text">
+ */
+/**
+ * 1. Corrects inability to style clickable `input` types in iOS.
+ * 2. Normalize `box-sizing` across all elements that this component could be
+ *    applied to.
+ * 3. Inherit text color from ancestor.
+ * 4. Inherit font styles from ancestor.
+ * 5. Normalize `line-height`. For `input`, it can't be changed from `normal` in Firefox 4+.
+ * 6. Prevent button text from being selectable.
+ * 7. Make sure `input` will wrap text across multiple lines.
+ */
+.Btn {
+  -webkit-appearance: none;
+  /* 1 */
+  background: transparent;
+  border-color: none;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  /* 2 */
+  color: inherit;
+  /* 3 */
+  cursor: pointer;
+  display: inline-block;
+  line-height: normal;
+  /* 6 */
+  margin: 0;
+  padding: 0.4em 0.75em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* 6 */
+  white-space: normal;
+  /* 7 */ }
+
+/**
+ * Remove excess padding and border in Firefox 4+
+ */
+.Btn::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * UI states
+ */
+.Btn:hover,
+.Btn:focus,
+.Btn:active {
+  text-decoration: none; }
+
+.Btn:disabled,
+.Btn.is-disabled {
+  cursor: default;
+  opacity: 0.4; }
+
+/** @define ButtonGroup */
+/*! suit-button-group v2.2.0 | MIT License | github.com/suitcss */
+/**
+ * Create a visual connection between UI actions that belong together.
+ * Must only contain `ButtonGroup-item` objects as children.
+ *
+ * Example HTML:
+ *
+ * <div class="ButtonGroup [ButtonGroup--hz]">
+ *   <div class="ButtonGroup-item">
+ *     <a class="Button" href="#">Dashboard</a>
+ *   </div>
+ *   <div class="ButtonGroup-item">
+ *     <a class="Button" href="#">Account</a>
+ *   </div>
+ *   <div class="ButtonGroup-item">
+ *     <a class="Button" href="#">Logout</a>
+ *   </div>
+ * </div>
+ */
+/**
+ * Button group
+ *
+ * 1. Ensure component is full-width if applied to elements that are
+ *    `inline-block` by default.
+ * 2. Collapse whitespace between child elements. Only necessary for the
+ *    `ButtonGroup--hz` modifier which lays items out as `inline-block`, but
+ *    included in the base component so that affects on `font-size` are
+ *    consistent.
+ * 3. Remove any default styles that might be present when `ol` or `ul` are the
+ *    root element.
+ */
+.ButtonGroup {
+  display: block;
+  /* 1 */
+  font-size: 0;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  list-style: none;
+  /* 3 */
+  padding: 0;
+  /* 3 */ }
+
+/**
+ * Button group item
+ *
+ * 1. Make it full-width if applied to elements that are `inline-block` by
+ *    default.
+ * 2. Reset the font size of the buttons to the root font size.
+ */
+.ButtonGroup-item {
+  display: block;
+  /* 1 */
+  font-size: 1rem;
+  /* 2 */ }
+
+.ButtonGroup-item > .Button {
+  display: block;
+  width: 100%; }
+
+/**
+ * Ensure that interactions with a button make it sit on top of other buttons
+ * in the group.
+ */
+.ButtonGroup-item > .Button:hover,
+.ButtonGroup-item > .Button:focus,
+.ButtonGroup-item > .Button:active,
+.ButtonGroup-item > .Button.is-pressed {
+  z-index: 1; }
+
+/* Modifier: horizontal buttons
+   ========================================================================== */
+.ButtonGroup--hz > .ButtonGroup-item {
+  display: inline-block; }
+
+/**
+ * ButtonGroup custom spacing
+ */
+.ButtonGroup--spacing {
+  margin-bottom: 24px; }
+
+.ButtonGroup--spacing > .ButtonGroup-item {
+  margin-right: 16px; }
+
+.ButtonGroup--spacing > .ButtonGroup-item:last-child {
+  margin-right: 0; }
+
+/** @define Grid */
+/*! based on suitcss-components-grid v1.3.0 */
+/**
+ * Core grid component
+ *
+ * DO NOT apply dimension or offset utilities to the `Grid` element. All cell
+ * widths and offsets should be applied to child grid cells.
+ *
+ * Example uses:
+ *
+ * <div class="Grid [Grid--alignCenter|Grid--alignRight|Grid--withGutter]">
+ *   <div class="Grid-cell [Grid-cell--center] u-size1of2"></div>
+ *   <div class="Grid-cell u-size1of2"></div>
+ *   <div class="Grid-cell u-size1of3"></div>
+ *   <div class="Grid-cell u-size1of3"></div>
+ * </div>
+ */
+/* Grid container
+   ========================================================================== */
+/**
+ * All content must be contained within child `Grid-cell` elements.
+ *
+ * 1. Account for browser defaults of elements that might be the root node of
+ *    the component.
+ * 2. Remove inter-cell whitespace that appears between `inline-block` child
+ *    elements.
+ * 3. Ensure consistent default alignment.
+ */
+.Grid {
+  display: block;
+  /* 1 */
+  font-size: 0;
+  /* 2 */
+  margin: 0;
+  /* 1 */
+  padding: 0;
+  /* 1 */
+  text-align: left;
+  /* 3 */ }
+
+/**
+ * Modifier: border separated grid cells
+ */
+.Grid--withSeparator {
+  text-align: center;
+  margin: 24px 0;
+  display: -ms-flexbox;
+  display: flex; }
+
+.Grid--withSeparator > .Grid-cell {
+  border: 0 solid #f5f5f5;
+  border-width: 0 0 0 1px;
+  padding: 0 24px; }
+
+.Grid--withSeparator > .Grid-cell:first-child {
+  border-width: 0; }
+
+/**
+ * Modifier: center align all grid cells
+ */
+.Grid--alignCenter {
+  text-align: center; }
+
+/**
+ * Modifier: right align all grid cells
+ */
+.Grid--alignRight {
+  text-align: right; }
+
+/**
+ * Modifier: middle-align grid cells
+ */
+.Grid--alignMiddle > .Grid-cell {
+  vertical-align: middle; }
+
+/**
+ * Modifier: bottom-align grid cells
+ */
+.Grid--alignBottom > .Grid-cell {
+  vertical-align: bottom; }
+
+/**
+ * Modifier: gutters
+ *
+ * NOTE: this can trigger a horizontal scrollbar if the component is as wide as
+ * the viewport. Use padding on a container, or `overflow-x:hidden` to protect
+ * against it.
+ */
+.Grid--withGutter {
+  margin: 0 calc(-0.5 * 48px); }
+
+.Grid--withGutterSm {
+  margin: 0 calc(-0.25 * 48px); }
+
+.Grid--withGutter > .Grid-cell {
+  padding: 0 calc(0.5 *  48px); }
+
+.Grid--withGutterSm > .Grid-cell {
+  padding: 0 calc(0.25 *  48px); }
+
+/* Grid cell
+   ========================================================================== */
+/**
+ * No explicit width by default. Rely on combining `Grid-cell` with a dimension
+ * utility or a component class that extends 'grid'.
+ *
+ * 1. Fundamentals of the non-float grid layout.
+ * 2. Reset font size change made in `Grid`.
+ * 3. Keeps content correctly aligned with the grid direction.
+ * 4. Controls vertical positioning of units.
+ * 5. Make cells full-width by default.
+ */
+.Grid-cell {
+  box-sizing: border-box;
+  display: inline-block;
+  /* 1 */
+  font-size: 1rem;
+  /* 2 */
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  /* 3 */
+  vertical-align: top;
+  /* 4 */
+  width: 100%;
+  /* 5 */ }
+
+/**
+ * Modifier: horizontally center one unit
+ * Set a specific unit to be horizontally centered. Doesn't affect
+ * any other units. Can still contain a child `Grid` object.
+ */
+.Grid-cell--center {
+  display: block;
+  margin: 0 auto; }
+
+.Grid-cell--is-flex {
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+/*------------------------------------*    $SPLIT
+\*------------------------------------*/
+/**
+ * Simple split item for creating two elements floated away from one another,
+ * e.g.:
+ *
+   <dl class=split>
+       <dt class=split__title>Burger and fries</dt>
+       <dd>&pound;5.99</dd>
+       <dt class=split__title>Fillet steak</dt>
+       <dd>&pound;19.99</dd>
+       <dt class=split__title>Ice cream</dt>
+       <dd>&pound;2.99</dd>
+   </dl>
+ *
+   <ol class="split  results">
+       <li class=first><b class=split__title>1st place</b> Bob</li>
+       <li class=second><b class=split__title>2nd place</b> Lilly</li>
+       <li class=third><b class=split__title>3rd place</b> Ted</li>
+   </ol>​
+ */
+.Split {
+  text-align: right;
+  list-style: none;
+  margin-left: 0; }
+
+.Split-title {
+  text-align: left;
+  float: left;
+  clear: left; }
+
+.Split-title + dd {
+  min-height: 40px; }
+
+/*------------------------------------*    $FLEX SPLIT
+\*------------------------------------*/
+/**
+ * Simple split item for creating two elements floated away from one another, base on flexbox
+ * e.g.:
+ *
+  <section class=FlexSplit>
+      <div class=FlexSplit-title>Burger and fries</div>
+      <div class="FlexSplit-desc">&pound;5.99</div>
+  </section>
+*
+*/
+.FlexSplit {
+  border: 0 solid #e8ebed;
+  border-width: 0 0 1px;
+  min-height: 43px; }
+
+.FlexSplit-title {
+  color: #333132;
+  line-height: 2;
+  padding-top: 10px;
+  text-align: left;
+  float: left;
+  clear: left; }
+
+.FlexSplit-desc {
+  color: #686768;
+  line-height: 2;
+  padding-top: 10px;
+  text-align: right; }
+
+/**
+ * Nav abstraction as per: csswizardry.com/2011/09/the-nav-abstraction
+ * When used on an `ol` or `ul`, this class throws the list into horizontal mode
+ * e.g.:
+ *
+   <ul class=nav>
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ * Demo: jsfiddle.net/inuitcss/Vnph4
+ *
+ */
+.Nav {
+  list-style: none;
+  margin-left: 0; }
+  .Nav > li,
+  .Nav > li > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1; }
+
+/**
+ * `.nav--stacked` extends `.nav` and throws the list into vertical mode, e.g.:
+ *
+   <ul class="nav  nav--stacked">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ */
+.Nav--Stacked > li {
+  display: list-item; }
+  .Nav--Stacked > li > a {
+    display: block; }
+
+/**
+ * `.nav--banner` extends `.nav` and centres the list, e.g.:
+ *
+   <ul class="nav  nav--banner">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ */
+.Nav--Banner {
+  text-align: center; }
+
+/**
+ * Give nav links a big, blocky hit area. Extends `.nav`, e.g.:
+ *
+   <ul class="nav  nav--block">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ */
+.Nav--Block {
+  line-height: 1;
+  /**
+     * Remove whitespace caused by `inline-block`.
+     */
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em;
+  white-space: nowrap; }
+  .Nav--Block > li {
+    letter-spacing: normal;
+    word-spacing: normal; }
+
+/**
+ * Force a nav to occupy 100% of the available width of its parent. Extends
+ * `.nav`, e.g.:
+ *
+   <ul class="nav  nav--fit">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ * Thanks to @pimpl for this idea!
+ */
+.Nav--Fit {
+  display: table;
+  width: 100%; }
+  .Nav--Fit > li {
+    display: table-cell; }
+    .Nav--Fit > li > a {
+      display: block; }
+
+/**
+ * Make a list of keywords. Extends `.nav`, e.g.:
+ *
+   `<ul class="nav  nav--keywords>`
+ *
+ */
+.Nav--Keywords > li:after {
+  content: "\002C" "\00A0"; }
+
+.Nav--Keywords > li:last-child:after {
+  display: none; }
+
+/*------------------------------------*    #Media
+\*------------------------------------*/
+/**
+ * Place any image- and text-like content side-by-side, as per:
+ * stubbornella.org/content/2010/06/25/the-Media-object-saves-hundreds-of-lines-of-code
+ */
+.Media {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1em;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+@media screen and (min-width: 720px) {
+  .Media {
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -ms-flex-direction: row;
+        flex-direction: row; } }
+
+.Media-img {
+  margin-right: 24px; }
+
+.Media--small > .Media-img {
+  margin-right: 12px; }
+
+.Media--reverse > .Media__img {
+  margin-right: 0;
+  margin-left: 12px; }
+
+.Media--large > .Media-img {
+  margin-right: 48px; }
+
+.Media--reverse > .Media__img {
+  margin-right: 0;
+  margin-left: 48px; }
+
+.Media--flush > .Media-img {
+  margin-right: 0;
+  margin-left: 0; }
+
+.Media-body {
+  -ms-flex: 1 0 0;
+      flex: 1 0 0; }
+  .Media-body, .Media-body :last-child {
+    margin-bottom: 0; }
+
+.Media--center {
+  -ms-flex-align: center;
+      align-items: center; }
+
+.Media--bottom {
+  -ms-flex-align: end;
+      align-items: flex-end; }
+
+.Media--reverse > .Media-img {
+  -ms-flex-order: 1;
+      order: 1;
+  margin: 0 0 0 24px; }
+
+/* prevents element from being responsive */
+.Media--fixed {
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.UiBlock {
+  display: -ms-flexbox;
+  display: flex; }
+
+.UiBlock--startJustified {
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+
+.UiBlock--centerJustified {
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.UiBlock--endJustified {
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.UiBlock--aroundJustified {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.UiBlock--betweenJustified {
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.UiBlock--horizontal {
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.UiBlock--horizontalReverse {
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
+
+.UiBlock--vertical {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.UiBlock--verticalReverse {
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
+
+.Nav-item {
+  height: 78px;
+  line-height: 78px;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  padding: 0 0 0 50px;
+  transition: .5s; }
+
+.Nav-ico {
+  position: relative;
+  bottom: -8px;
+  margin: 0 16px 0 0; }
+
+.Nav-item:hover,
+.Nav-item:focus,
+.Nav-item:active,
+.Nav-item.is-current {
+  outline: none;
+  text-decoration: none;
+  background: #434647;
+  text-decoration: none;
+  transition: .5s; }
+
+.Nav-subItem {
+  color: #fff; }
+
+.Nav-notification {
+  top: -10px;
+  right: -7px;
+  position: absolute; }
+
+.App {
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+  margin-right: 2%; }
+
+.AppCheckout-associatedBeacons {
+  font-family: "SlatePro", sans-serif; }
+
+.AppsGroupWrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.AppsGroup {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+/*------------------------------------*    $BREADCRUMB
+\*------------------------------------*/
+/**
+ * Simple breadcrumb styling to apply to (ordered) lists. Extends `.nav`, e.g.:
+ *
+   <ol class="nav  breadcrumb">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>The Board</a></li>
+       <li class=current><a href=#>Directors</a></li>
+   </ol>
+ *
+ * Demo: jsfiddle.net/inuitcss/rkAY9
+ *
+ */
+.Breadcrumb > li + li:before {
+  content: "\00BB" "\00A0"; }
+
+/**
+ * For denoting a path-like structure, GitHub style, e.g.:
+ *
+   <ol class="nav  breadcrumb--path">
+       <li class=breadcrumb__root><a href=#>inuit.css</a></li>
+       <li><a href=#>inuit.css</a></li>
+       <li><a href=#>partials</a></li>
+       <li class=current><a href=#>objects</a></li>
+   </ol>
+ *
+ */
+.Breadcrumb--path > li + li:before {
+  content: "\002F" "\00A0"; }
+
+/**
+ * Assign a delimiter on the fly through a data attribute, e.g.:
+ *
+   <ol class="nav  breadcrumb">
+       <li><a href=#>Home</a></li>
+       <li data-breadcrumb="|"><a href=#>About</a></li>
+       <li data-breadcrumb="|"><a href=#>The Board</a></li>
+       <li data-breadcrumb="|" class=current><a href=#>Directors</a></li>
+   </ol>
+ *
+ */
+.Breadcrumb > li + li[data-breadcrumb]:before {
+  content: attr(data-breadcrumb) " ";
+  font-weight: bold; }
+
+/**
+ * Denote the root of the tree.
+ */
+.Breadcrumb-root {
+  font-weight: bold; }
+
+.Breadcrumb-item {
+  color: #fff;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px 8px;
+  font-family: "SlatePro-Light", sans-serif;
+  font-weight: normal;
+  display: inline-block; }
+
+.Header {
+  background-color: #3d3f40;
+  height: 100%;
+  color: #fff;
+  position: relative;
+  width: calc(100% * 1 / 6);
+  padding-top: 70px; }
+  @media (min-width: 1400px) {
+    .Header {
+      width: 260px; } }
+
+.Header-navContent {
+  overflow: auto;
+  height: 100%; }
+
+.Header-navWrapper {
+  -ms-flex-positive: 1;
+      flex-grow: 1; }
+
+.Content {
+  overflow: hidden;
+  width: calc(100% * 5 / 6); }
+  @media (min-width: 1400px) {
+    .Content {
+      -ms-flex: 1;
+          flex: 1;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      width: auto; } }
+
+.Content-head {
+  background-color: #8BB49A;
+  color: #fff;
+  min-height: 70px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.Content-body {
+  padding: 24px;
+  height: calc(100% - 70px);
+  clear: both;
+  margin-right: 0;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.Content-breadcrumb {
+  font-weight: normal;
+  display: inline-block;
+  margin-left: 24px; }
+
+html, body, .Content {
+  height: 100% !important; }
+
+.Beacon {
+  min-height: 110px;
+  border: 1px solid #e1e4e5;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0 23px 0 0;
+  margin-bottom: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.Beacon-picture {
+  width: 48px;
+  height: 60px;
+  display: inline-block;
+  margin-right: 12px;
+  position: relative; }
+
+.Beacon-picture--small {
+  width: 30px;
+  height: 40px; }
+
+.Beacon-security {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  background: transparent url(../images/secured.png) no-repeat 0 0; }
+
+.Beacon-notification {
+  position: absolute;
+  top: -5px;
+  right: 0; }
+
+.Beacon-packetsItem {
+  display: inline-block; }
+
+.Beacon-packetsItem:not(:first-child) {
+  padding: 0 0 0 15px; }
+
+.Beacon-packetsItem:not(:first-child)::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: -11px 0 0 -9px;
+  background: #797979; }
+
+.Beacon-picture--beacon_cluster {
+  background: url(../images/beacons/beacon_cluster.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Beacon-picture--mint {
+  background: url(../images/beacons/mint.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Beacon-picture--blueberry {
+  background: url(../images/beacons/blueberry.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Beacon-picture--ice {
+  background: url(../images/beacons/ice.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Beacon-picture--lemon {
+  background: url(../images/beacons/lemon.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Beacon-picture--candy {
+  background: url(../images/beacons/candy.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Beacon-picture--beetroot {
+  background: url(../images/beacons/beetroot.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Beacon-picture--white {
+  background: url(../images/beacons/white.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Beacon-picture--transparent {
+  background: url(../images/beacons/transparent.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Beacon-picture--black {
+  background: url(../images/beacons/black.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Beacon-picture--coconut {
+  background: url(../images/beacons/coconut.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Beacon-picture--caramel {
+  background: url(../images/beacons/caramel.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Beacon-picture--contour {
+  background: url(../images/beacons/contour.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Beacon-picture--bulkbag {
+  background: url(../images/bag-of-beacons-list.jpg) no-repeat 0 0; }
+
+.Beacon-picture--devkit {
+  background: url(../images/box_devkit_proximity_list.png) no-repeat center center;
+  background-size: contain; }
+
+.Beacon-picture--location_devkit {
+  background: url(../images/box_devkit_location_list.png) no-repeat center center;
+  background-size: contain; }
+
+.Beacon-picture--stickers {
+  background: url(../images/box_stickers_list.png) no-repeat center center;
+  background-size: contain; }
+
+.Beacon-picture--xmas_box {
+  background: url(../images/box_xmas_box_list.png) no-repeat center center;
+  background-size: contain; }
+
+.Beacon-picture--mirror_devkit {
+  background: url(../images/mirror-devkit-box.png) no-repeat center center;
+  background-size: contain; }
+
+.Beacon-picture--proximity_devkit_2018 {
+  background: url(../images/box_devkit_proximity_list.png) no-repeat center center;
+  background-size: contain; }
+
+.Beacon-picture--location_devkit_with_uwb {
+  background: url(../images/location_devkit_with_uwb.png) no-repeat center center;
+  background-size: contain; }
+
+.Beacon-picture--proximity_devkit_2018 {
+  background: url(../images/proximity_devkit_2018.png) no-repeat center center;
+  background-size: contain; }
+
+.Beacon-picture--proximity_bulkbag_2018 {
+  background: url(../images/proximity_bulkbag_2018.png) no-repeat center center;
+  background-size: contain; }
+
+.Beacon-data {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  clear: left;
+  line-height: 1.3;
+  min-width: 435px;
+  font-family: "SlatePro-Bk", sans-serif;
+  margin: 0; }
+
+.Beacon-name {
+  color: #333132;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1;
+  display: inline-block;
+  font-weight: normal;
+  font-family: "SlatePro", sans-serif; }
+
+.Beacon-body {
+  -ms-flex: 1;
+      flex: 1;
+  overflow: hidden; }
+
+.Beacon-state {
+  position: relative;
+  width: 200px;
+  min-height: 23px;
+  display: inline-block; }
+
+.Beacon-state > a {
+  margin-left: 10px; }
+
+.Beacon-title {
+  min-width: 70px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.Beacon-title--col1 {
+  min-width: 45px; }
+
+.Beacon-title--col2 {
+  min-width: 53px; }
+
+.Beacon-title--col3 {
+  min-width: 53px; }
+
+.Beacon-def {
+  margin-right: 12px;
+  min-width: 52px; }
+
+.Beacon-def--col1 {
+  min-width: 38px; }
+
+.Beacon-selectIndicator {
+  padding: 7px 12px;
+  border-radius: 7px; }
+
+.Beacon-select {
+  padding: 32px 12px 32px 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 5px;
+  position: relative; }
+
+.Beacon-select:after {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  z-index: -1;
+  box-sizing: content-box;
+  padding: 0 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  content: '';
+  opacity: 0;
+  transition: -webkit-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  -webkit-transform: scale(0);
+  transform: scale(0); }
+
+.Beacon-indoorName {
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+.Beacon-dataLabelRow {
+  min-width: 60px; }
+
+.Adword {
+  min-height: 110px;
+  border: 1px solid #e1e4e5;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0 23px 0 0;
+  margin-bottom: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.Adword-name {
+  color: #333132;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1;
+  display: inline-block;
+  font-weight: normal;
+  font-family: "SlatePro", sans-serif; }
+
+.Adword-select {
+  padding: 32px 12px 32px 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 5px;
+  position: relative; }
+
+.Adword-selectIndicator {
+  padding: 7px 12px;
+  border-radius: 7px; }
+
+.Adword-select {
+  padding: 32px 12px 32px 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 5px;
+  position: relative; }
+
+.Adword-select:after {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  z-index: -1;
+  box-sizing: content-box;
+  padding: 0 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  content: '';
+  opacity: 0;
+  transition: -webkit-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  -webkit-transform: scale(0);
+  transform: scale(0); }
+
+.Adword-picture {
+  width: 48px;
+  height: 60px;
+  display: inline-block;
+  margin-right: 12px;
+  position: relative; }
+
+.Adword-picture--mint {
+  background: url(../images/beacons/mint.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Adword-picture--blueberry {
+  background: url(../images/beacons/blueberry.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Adword-picture--ice {
+  background: url(../images/beacons/ice.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Adword-picture--lemon {
+  background: url(../images/beacons/lemon.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Adword-picture--candy {
+  background: url(../images/beacons/candy.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Adword-picture--beetroot {
+  background: url(../images/beacons/beetroot.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Adword-picture--white {
+  background: url(../images/beacons/white.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Adword-picture--transparent {
+  background: url(../images/beacons/transparent.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Adword-picture--black {
+  background: url(../images/beacons/black.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Adword-picture--coconut {
+  background: url(../images/beacons/coconut.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Adword-picture--contour {
+  background: url(../images/beacons/contour.png) no-repeat 0 0;
+  background-size: contain; }
+
+.Adword-picture--bulkbag {
+  background: url(../images/bag-of-beacons-list.jpg) no-repeat 0 0; }
+
+.Adword-picture--devkit {
+  background: url(../images/box_devkit_proximity_list.png) no-repeat center center;
+  background-size: contain; }
+
+.Adword-picture--location_devkit {
+  background: url(../images/box_devkit_location_list.png) no-repeat center center;
+  background-size: contain; }
+
+.Adword-picture--stickers {
+  background: url(../images/box_stickers_list.png) no-repeat center center;
+  background-size: contain; }
+
+.Adword-deviceData {
+  -ms-flex: 1;
+      flex: 1;
+  overflow: hidden; }
+
+.Adword-broadcastingData {
+  overflow: hidden;
+  -ms-flex-preferred-size: 268px;
+      flex-basis: 268px;
+  font-size: 14px;
+  line-height: 1.3;
+  font-family: "SlatePro-Bk", sans-serif;
+  margin: 0; }
+
+.Adword-analyticsClicks {
+  width: 48px; }
+
+.AdwordLinkItem-analyticsClicks {
+  width: 48px; }
+
+.Adword-analyticsImpressions {
+  width: 78px; }
+
+.AdwordLinkItem-analyticsImpressions {
+  width: 78px; }
+
+.Adword-dataSeparator {
+  width: 1px;
+  height: 87px;
+  background-color: #E4E4E4; }
+
+.Adword-dataLabelRow {
+  min-width: 60px; }
+
+.Adword-data {
+  font-size: 14px;
+  line-height: 1.3;
+  font-family: "SlatePro-Bk", sans-serif;
+  margin: 0; }
+
+.Adword-picture--contour {
+  background: url(../svg/ico-physical-web-black.svg) no-repeat 50% 50%; }
+
+.Adword-awaitingConfigurationMsg {
+  -ms-flex-preferred-size: 530px;
+      flex-basis: 530px; }
+  @media (min-width: 1350px) {
+    .Adword-awaitingConfigurationMsg {
+      -ms-flex-preferred-size: 620px;
+          flex-basis: 620px; } }
+
+.Adword-flexDataBlock {
+  -ms-flex-direction: row;
+      flex-direction: row;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.Adword-noDataLabel {
+  overflow: hidden;
+  -ms-flex-preferred-size: 250px;
+      flex-basis: 250px;
+  font-size: 14px;
+  line-height: 1.3;
+  font-family: "SlatePro-Bk", sans-serif;
+  margin: 0; }
+
+.ChartPerformance {
+  width: 250px;
+  height: 100px; }
+
+.NoLinkConfigBlankSlate {
+  padding: 32px 0 31px;
+  border: 0 solid #e8ebed;
+  border-width: 0 0 1px; }
+
+.u-fs20 {
+  font-size: 20px; }
+
+.NoBeacon-picture {
+  width: 48px;
+  height: 60px;
+  display: inline-block; }
+
+.NoBeacon-picture--home {
+  background: url(../svg/nobeacon-home.svg) no-repeat 50% 50%; }
+
+.NoBeacon-picture--mail {
+  background: url(../svg/nobeacon-mail.svg) no-repeat 50% 50%; }
+
+.NoBeacon-picture--hands {
+  background: url(../svg/nobeacon-hands.svg) no-repeat 50% 50%; }
+
+.NoBeacon-picture--activationcode {
+  background: url(../svg/nobeacon-activationcode.svg) no-repeat 50% 50%;
+  height: 32px;
+  width: 64px; }
+
+.NoBeacon {
+  min-height: 74px;
+  border: 1px solid #e1e4e5;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0 23px;
+  margin-bottom: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.Location {
+  min-height: 110px;
+  border: 1px solid #e1e4e5;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0 23px;
+  margin-bottom: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.Location-picture {
+  width: 48px;
+  height: 60px;
+  display: inline-block;
+  margin-right: 25px; }
+
+.Location-picture--contour {
+  background: url(../svg/ico-indoor-black.svg) no-repeat 50% 50%; }
+
+.Location-picture--tempEmpty {
+  background: url(../svg/ico-indoor.svg) no-repeat 50% 50%; }
+
+.Location-picture--bulkbag {
+  background: url(../images/bag-of-beacons-list.jpg) no-repeat 0 0; }
+
+.Location-picture--devkit {
+  background: url(../images/box_devkit_list.png) no-repeat center center;
+  background-size: contain; }
+
+.Location-picture--stickers {
+  background: url(../images/box_stickers_list.png) no-repeat center center;
+  background-size: contain; }
+
+.Location-picture--imageMap {
+  width: 64px;
+  height: 64px;
+  display: block; }
+
+.Location-data {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  clear: left;
+  line-height: 1.3;
+  width: 360px;
+  font-family: "SlatePro-Bk", sans-serif; }
+
+.Location-name {
+  color: #333132;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1;
+  display: inline-block;
+  font-weight: normal;
+  font-family: "SlatePro", sans-serif; }
+
+.Location-state {
+  position: relative;
+  width: 190px;
+  min-height: 23px;
+  display: inline-block; }
+
+.Location-body {
+  -ms-flex: 1;
+      flex: 1;
+  overflow: hidden; }
+
+.Location-state > a {
+  margin-left: 10px; }
+
+.Location-title {
+  min-width: 70px; }
+
+.Location-title--col1 {
+  min-width: 45px; }
+
+.Location-title--col2 {
+  min-width: 53px; }
+
+.Location-def {
+  margin-right: 10px;
+  min-width: 52px; }
+
+.Location-def--col1 {
+  min-width: 38px; }
+
+.Location-selectIndicator {
+  padding: 1px 6px;
+  border-radius: 7px; }
+
+.Location-select {
+  padding: 35px 25px 35px 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 5px;
+  position: relative; }
+
+.Location-select:after {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  z-index: -1;
+  box-sizing: content-box;
+  padding: 0 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  content: '';
+  opacity: 0;
+  transition: -webkit-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  -webkit-transform: scale(0);
+  transform: scale(0); }
+
+.Sticker {
+  min-height: 110px;
+  border: 1px solid #e1e4e5;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0 23px 0 0;
+  margin-bottom: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.Sticker-picture {
+  width: 90px;
+  height: 55px;
+  display: inline-block;
+  margin-right: 25px; }
+
+.Sticker-picture:after {
+  content: '';
+  display: block;
+  width: 90px;
+  height: 55px; }
+
+.Sticker-picture--blank {
+  background: url(../svg/ico-sticker-undefined.svg) no-repeat 0 0; }
+
+.Sticker-picture--mintcocktail {
+  background: url(../svg/ico-sticker-mintcocktail.svg) no-repeat 0 0; }
+
+.Sticker-picture--icymarshmallow {
+  background: url(../svg/ico-sticker-icymarshmallow.svg) no-repeat 0 0; }
+
+.Sticker-picture--sweetbeetroot {
+  background: url(../svg/ico-sticker-sweetbeetroot.svg) no-repeat 0 0; }
+
+.Sticker-picture--blueberrypie {
+  background: url(../svg/ico-sticker-blueberrypie.svg) no-repeat 0 0; }
+
+.Sticker-picture--candyfloss {
+  background: url(../svg/ico-sticker-candyfloss.svg) no-repeat 0 0; }
+
+.Sticker-picture--lemontart {
+  background: url(../svg/ico-sticker-lemontart.svg) no-repeat 0 0; }
+
+.Sticker-picture--shoe:after {
+  background: url(../svg/ico-shoe.svg) no-repeat 0 0; }
+
+.Sticker-picture--door:after {
+  background: url(../svg/ico-door.svg) no-repeat 0 0; }
+
+.Sticker-picture--dog:after {
+  background: url(../svg/ico-dog.svg) no-repeat 0 0; }
+
+.Sticker-picture--bag:after {
+  background: url(../svg/ico-bag.svg) no-repeat 0 0; }
+
+.Sticker-picture--fridge:after {
+  background: url(../svg/ico-fridge.svg) no-repeat 0 0; }
+
+.Sticker-picture--chair:after {
+  background: url(../svg/ico-chair.svg) no-repeat 0 0; }
+
+.Sticker-picture--bike:after {
+  background: url(../svg/ico-bike.svg) no-repeat 0 0; }
+
+.Sticker-picture--bed:after {
+  background: url(../svg/ico-bed.svg) no-repeat 0 0; }
+
+.Sticker-picture--car:after {
+  background: url(../svg/ico-car.svg) no-repeat 0 0; }
+
+.Sticker-data {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  line-height: 1.3;
+  font-family: "SlatePro-Bk", sans-serif;
+  margin: 0; }
+
+.Sticker-name {
+  color: #333132;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1;
+  display: inline-block;
+  font-weight: normal;
+  font-family: "SlatePro", sans-serif; }
+
+.Sticker-body {
+  -ms-flex: 1;
+      flex: 1;
+  overflow: hidden; }
+
+.Sticker-title {
+  min-width: 70px; }
+
+.Sticker-title--col1 {
+  min-width: 50px; }
+
+.Sticker-title--col2 {
+  min-width: 72px; }
+
+.Sticker-def {
+  margin-right: 10px;
+  min-width: 30px; }
+
+.Sticker-def--col1 {
+  min-width: 26px; }
+
+.Sticker-selectIndicator {
+  padding: 7px 12px;
+  border-radius: 7px; }
+
+.Sticker-select {
+  padding: 32px 12px 32px 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 5px;
+  position: relative; }
+
+.Sticker-select:after {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  z-index: -1;
+  box-sizing: content-box;
+  padding: 0 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  content: '';
+  opacity: 0;
+  transition: -webkit-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  -webkit-transform: scale(0);
+  transform: scale(0); }
+
+.CloudLogo {
+  width: 100%;
+  height: 70px;
+  margin-top: -70px;
+  background: #303233 url(../images/estimote-cloud.png) no-repeat 50% 50%;
+  display: block; }
+
+.Wrapper {
+  min-width: 1280px;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex; }
+
+.Wrapper--center {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.Wrapper--collapsing {
+  min-width: 320px; }
+
+.Well {
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #dadee0;
+  border-radius: 5px;
+  margin-bottom: 24px; }
+
+.Well--resources {
+  min-height: 160px;
+  padding: 24px; }
+
+.Well--orderDataColumns {
+  min-height: 300px; }
+
+.ProductLabel {
+  color: #6a6a6a;
+  margin-right: 12px; }
+
+.Close {
+  -webkit-font-smoothing: antialiased;
+  float: right;
+  font-size: 34px;
+  font-size: 2.125rem;
+  line-height: 1.41176;
+  line-height: 1.5;
+  margin-top: -7px; }
+
+.Clear {
+  -webkit-font-smoothing: antialiased;
+  font-size: 26px;
+  font-size: 1.625rem;
+  position: absolute;
+  padding: 1px 6px;
+  right: 4px; }
+
+.Clear--pulledLeft {
+  right: 24px; }
+
+.ColorSample {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc; }
+
+.ColorSample--LemonTart {
+  background-color: #b9b70e; }
+
+.ColorSample--SweetBeetroot {
+  background-color: #63004A; }
+
+.ColorSample--CandyFloss {
+  background-color: #f5a4c7; }
+
+.ColorSample--BlueberryPie {
+  background-color: #414099; }
+
+.ColorSample--IcyMarshmallow {
+  background-color: #b9e4fa; }
+
+.ColorSample--MintCocktail {
+  background-color: #8BB49A; }
+
+.ColorSample--VanillaPuff {
+  background-color: #fff; }
+
+.ColorSample--LiquoriceSwirl {
+  background-color: #000; }
+
+.HdComplex {
+  border: 0 solid #dcdfe0;
+  border-width: 0 0 1px;
+  margin-top: 36px;
+  padding-bottom: 7px;
+  margin-bottom: 36px; }
+
+.HdComplex-primary {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px; }
+
+.HdComplex-secondary {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2; }
+
+.IncludesGrid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.IncludesGrid > :last-child {
+  margin: 0; }
+
+.IncludesGrid-ico {
+  width: 32px;
+  height: 32px;
+  color: #902866;
+  fill: currentColor; }
+
+.IncludesGrid-ico--sm {
+  padding: 2px; }
+
+.Dashed {
+  height: 0;
+  border-width: 1px 0 0;
+  border-color: #a7b6bc;
+  border-style: dashed;
+  margin-bottom: 24px; }
+
+.Capitalize {
+  text-transform: capitalize; }
+
+.Featured {
+  background: #f2f2f2;
+  padding: 15px;
+  border-radius: 5px; }
+
+.FlashMessage {
+  color: #6e917c;
+  background-color: #d5ebdb;
+  border: 1px solid #98c5a7;
+  border-radius: 5px;
+  padding: 10px 14px;
+  margin-bottom: 0; }
+
+.FlashMessage--error {
+  color: #e03854;
+  background-color: #fbdce3;
+  border: 1px solid #eb96a4; }
+
+.FlashMessage--warning {
+  background: #f5f7df;
+  border-color: #cfd291;
+  color: #aead0d;
+  background: rgba(255, 255, 0, 0.15);
+  border-color: rgba(148, 102, 0, 0.4);
+  color: #946600; }
+
+.FlashMessage--inlineHelp {
+  background: #f5f5f5;
+  border-color: #e1e1e1;
+  color: #686868; }
+
+.FlashMessage--footNote {
+  border-radius: 3px;
+  background-color: #e6e7e8;
+  border: dashed 1px #bcbec0; }
+
+.FlashMessage--hasButton {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+  .FlashMessage--hasButton::before, .FlashMessage--hasButton::after {
+    content: ''; }
+  .FlashMessage--hasButton .FlashMessage_container {
+    -ms-flex-positive: 1;
+        flex-grow: 1; }
+
+:not(.Modal) > .FlashMessage--inlineHelp {
+  background: white; }
+
+.SelectAllItems {
+  color: #fff;
+  border-radius: 3px;
+  min-width: 140px;
+  min-height: 35px;
+  line-height: 35px;
+  font-family: 'SlatePro-Bk', sans-serif;
+  padding: 0 12px;
+  cursor: pointer;
+  background-color: #e4e4e4;
+  min-height: 37px;
+  min-width: 50px;
+  border: none; }
+
+.SelectAllItems-ctrl {
+  margin: 11px 12px; }
+
+.CancelPendingChanges {
+  position: absolute;
+  bottom: 55px;
+  right: 40px; }
+
+.FromSpacer {
+  padding: 6px 0;
+  text-align: center; }
+
+.AppIco {
+  max-width: 50px; }
+
+/*temp IndoorLocation item*/
+.IndoorLocation-picture {
+  max-width: 100px; }
+
+.IndoorLocation-svg {
+  width: 90px; }
+
+.IndoorLocation-pictureWrapper > svg {
+  width: 90px; }
+
+.BulletList {
+  list-style: initial;
+  list-style-type: square; }
+
+.LocationVisualization {
+  position: relative;
+  overflow: hidden; }
+
+.LocationVisualization-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  opacity: .5; }
+
+.LocationVisualization-canvas {
+  width: 100%;
+  position: relative;
+  z-index: 2; }
+
+.LocationVisualization--btn {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  right: 12px;
+  background-color: #fff;
+  width: 30px;
+  height: 30px; }
+
+.point-handle {
+  cursor: grab;
+  -ms-touch-action: none;
+      touch-action: none; }
+
+.dragging, .dragging .point-handle {
+  cursor: grabbing; }
+
+.EditSettingsModalForm {
+  min-height: 434px; }
+
+.AppGeneratorModalBd {
+  min-height: 430px;
+  display: -ms-flexbox;
+  display: flex; }
+
+.AppTypeIco,
+.AppPlatformIco {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #000;
+  border-radius: 23px; }
+
+.AppTypeIco.is-selected,
+.AppPlatformIco.is-selected {
+  background-color: #63004A;
+  transition: background-color 0.3s, color 0.3s;
+  color: #fff;
+  border-color: #63004A; }
+
+.AppTypeIco--dashed {
+  border-style: dashed; }
+
+.ApiCredentials {
+  margin: 0 auto; }
+
+.BillingError {
+  bottom: 0; }
+
+.BulkUpdateError {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 24px;
+  margin-right: 24px; }
+
+.Table {
+  width: 100%; }
+
+.Table tr {
+  border: 0 solid #ccc;
+  border-width: 0 0 1px; }
+
+.Table th,
+.Table td {
+  padding: 12px 0; }
+
+.ChartPreview {
+  min-height: 100px; }
+
+.ChartStacked {
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  width: 100%; }
+
+.ChartStacked-fraction {
+  -ms-flex: 1;
+      flex: 1;
+  background-color: red; }
+
+.SeparatorBottom {
+  border: 0 solid #ccc;
+  border-width: 0 0 1px; }
+
+.Analytics-label {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #999999; }
+
+.Analytics-title {
+  font-size: 64px;
+  font-size: 4rem;
+  line-height: 1.125;
+  color: #333132; }
+
+.Analytics-difference {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1; }
+
+.Analytics-up {
+  color: #94B398; }
+
+.Analytics-down {
+  color: #E74F57; }
+
+#js-Application {
+  height: 100%; }
+
+.highcharts-data-labels,
+.highcharts-legend {
+  font-family: "SlatePro-Bk", sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased; }
+
+.hasSingleItemsSelectedOld {
+  min-height: 350px; }
+
+.hasSingleItemsSelectedNew {
+  min-height: 402px; }
+
+.hasMultiItemsSelectedMix {
+  min-height: 402px; }
+
+.hasMultiItemsSelectedOld {
+  min-height: 246px; }
+
+.hasMultiItemsSelectedNew {
+  min-height: 350px; }
+
+.hasSingleItemsSelectedNewAndError {
+  min-height: 512px; }
+
+.hasMultiItemsSelectedMixAndError {
+  min-height: 460px; }
+
+.hasMultiItemsSelectedNewAndError {
+  min-height: 408px; }
+
+.NavSide-item {
+  padding: 9px 0;
+  border-right: #cccccc 1px solid;
+  cursor: pointer; }
+
+.NavSide-item .Badge--error {
+  margin-right: 5px; }
+
+.NavSide-empty {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  border-right: #cccccc 1px solid; }
+
+.NavSideCell {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.NavSide-item:focus,
+.NavSide-item:hover {
+  text-decoration: none;
+  outline: none; }
+
+.NavSide-item:focus:before,
+.NavSide-item:hover:before,
+.NavSide-item.is-active {
+  border: #cccccc 1px solid;
+  border-right: 0;
+  border-radius: 5px 0 0 5px;
+  margin-left: -1px;
+  margin-top: -1px;
+  margin-bottom: -1px; }
+
+.AddGeoForm-form {
+  -ms-flex: 1;
+      flex: 1; }
+
+.PacketInfo {
+  line-height: 1.5;
+  padding-top: 14px;
+  color: #333132;
+  padding-bottom: 4px; }
+
+.u-restrictedBot {
+  border: 0 solid #e8ebed;
+  border-width: 0 0 1px; }
+
+.u-restrictedTop {
+  border: 0 solid #e8ebed;
+  border-width: 1px 0 0; }
+
+.SelectBeaconListWrapper {
+  max-height: 323px;
+  overflow: auto; }
+
+@media screen and (max-width: 1349px) {
+  .u-isHidden--lg {
+    display: none !important; } }
+
+@media screen and (min-width: 1350px) {
+  .u-isHidden--xl-and-up {
+    display: none !important; } }
+
+.FlashMessage-close {
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  font-size: 32px;
+  right: 10px;
+  padding: 0 5px;
+  top: 0; }
+
+.Loyalty-img {
+  max-width: 692px; }
+
+.is-disabled {
+  opacity: 0.4;
+  cursor: default; }
+
+.SettingsButton {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  opacity: 0;
+  transition: opacity .5s ease-out; }
+
+.Well:hover .SettingsButton {
+  opacity: 1; }
+
+.has-no-border {
+  border-width: 0 !important; }
+
+.Btn {
+  color: #fff;
+  background-color: #63004A;
+  border-color: #63004A;
+  border-radius: 3px;
+  min-height: 35px;
+  line-height: 35px;
+  padding: 0;
+  font-family: "SlatePro-Bk", sans-serif;
+  transition: .5s;
+  padding: 0 20px; }
+
+.Btn:hover {
+  background-color: #54003D;
+  transition: .5s; }
+
+.Btn--outline {
+  border: 1px solid #63004A;
+  background-color: inherit;
+  border-radius: 3px;
+  color: #63004A; }
+
+.Btn--outline:hover {
+  background-color: #fff; }
+
+.Btn--clean {
+  border: 1px solid #fff;
+  background-color: inherit;
+  border-radius: 3px;
+  color: #63004A; }
+
+.Btn--md {
+  min-width: 100px; }
+
+.Btn--lg {
+  min-width: 140px; }
+
+.Btn--clean:hover {
+  background-color: #fff; }
+
+.Btn-ico {
+  position: relative;
+  top: 3px;
+  margin-right: 2px; }
+
+.Btn--success {
+  background-color: #e2f1e6;
+  border-color: #98c5a7;
+  color: #6e917c;
+  cursor: default; }
+  .Btn--success:hover {
+    background-color: #e2f1e6; }
+
+.Btn--info {
+  background-color: #f2f9fb;
+  border-color: #afced7;
+  color: #72b1c3;
+  cursor: default; }
+  .Btn--info:hover {
+    background-color: #f2f9fb; }
+
+.Btn--error {
+  background-color: #fbdce3;
+  border-color: #eb96a4;
+  color: #e03854;
+  cursor: default; }
+  .Btn--error:hover {
+    background-color: #fbdce3; }
+
+.Btn--info {
+  background-color: #f2f9fb;
+  border-color: #afced7;
+  color: #72b1c3;
+  cursor: default; }
+  .Btn--info:hover {
+    background-color: #f2f9fb; }
+
+.Btn--notransition {
+  transition: none; }
+
+.Btn-clean2 {
+  background-color: inherit;
+  color: #54003d; }
+
+.Btn-clean2:hover {
+  background-color: #54003d;
+  border-color: #54003d;
+  color: #fff; }
+
+.Btn--link {
+  background-color: transparent;
+  border-color: transparent;
+  color: #54003d; }
+  .Btn--link:hover {
+    background-color: inherit;
+    text-decoration: underline; }
+
+.Legal {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  color: #535657;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  padding-bottom: 15px; }
+
+.LegalLanding {
+  color: #8d8d92;
+  opacity: .4;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  display: block;
+  text-align: center;
+  margin-top: 100px; }
+
+/*------------------------------------*    $RANGE SETTINGS
+\*------------------------------------*/
+.Range-ico {
+  margin-top: 20px; }
+
+.Range-title {
+  color: #333;
+  line-height: 1.2;
+  font-weight: normal; }
+
+.Range-demo {
+  margin: 18px auto 28px; }
+
+.Range-title {
+  margin-top: 2px; }
+
+/**
+ *
+ * Demo: jsfiddle.net/inuitcss/MhHHU
+ *
+ */
+fieldset {
+  padding: 20px; }
+
+/**
+ * Text inputs
+ *
+ * Instead of a `[type]` selector for each kind of form input, we just use a
+ * class to target any/every one, e.g.:
+   <input type=text class=text-input>
+   <input type=email class=text-input>
+   <input type=password class=text-input>
+ *
+ */
+.TextInput,
+textarea {
+  color: #333132;
+  font-size: 16px;
+  font-family: "SlatePro", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  padding: 8px 16px;
+  width: 100%;
+  background-color: #fff;
+  height: 37px; }
+
+.TextArea {
+  color: #333132;
+  font-size: 16px;
+  font-family: "SlatePro", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  padding: 11px 13px;
+  width: 100%;
+  background-color: #fff;
+  min-height: 100px; }
+
+.TextInput--textarea {
+  min-height: 100px; }
+
+.FormSelect {
+  color: #333132;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "SlatePro", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  padding: 8px 16px;
+  width: 100%;
+  background-color: #fff;
+  height: 37px; }
+
+.FormSelect-AppearanceAsTextField {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield; }
+
+.FormSelect-default {
+  display: none; }
+
+.TextInput:focus,
+.TextArea:focus,
+textarea:focus,
+.FormSelect:focus {
+  border: 1px solid #63004A; }
+
+.TextInput--ico {
+  margin: 5px 0 0;
+  padding-right: 52px; }
+
+.TextInput--ico-username {
+  background-image: url("/images/username_v2.png");
+  background-position: 243px 10px;
+  background-repeat: no-repeat; }
+
+.TextInput--ico-username:focus {
+  background-image: url("/images/username_focus_v2.png"); }
+
+.TextInput--ico-password {
+  background-image: url("/images/password_v2.png");
+  background-position: 243px 10px;
+  background-repeat: no-repeat; }
+
+.TextInput--ico-password:focus {
+  background-image: url("/images/password_focus_v3.png"); }
+
+input.TextInput:-webkit-autofill {
+  background: #fff; }
+
+.DropDownIndicator:after {
+  background: url(../images/select-ico.svg) no-repeat center center;
+  content: '';
+  right: 4px;
+  display: block;
+  width: 15px;
+  height: 18px;
+  background-size: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 9px;
+  pointer-events: none; }
+
+/**
+ * Group sets of form fields in a list, e.g.:
+ *
+   <ul class=form-fields>
+       <li>
+           <label />
+           <input />
+       </li>
+       <li>
+           <label />
+           <select />
+       </li>
+       <li>
+           <label />
+           <input />
+       </li>
+   </ul>
+ *
+ */
+.FormFields {
+  list-style: none;
+  margin: 0; }
+
+.FormFields > li {
+  margin-bottom: 20px; }
+
+.FormFields > li:last-child {
+  margin-bottom: 0; }
+
+/**
+ * Labels
+ *
+ * Define a `.label` class as well as a `label` element. This means we can apply
+ * label-like styling to meta-labels for groups of options where a `label`
+ * element is not suitable, e.g.:
+ *
+   <li>
+       <span class=label>Select an option below:</span>
+       <ul class="multi-list  four-cols">
+           <li>
+               <input /> <label />
+           </li>
+           <li>
+               <input /> <label />
+           </li>
+           <li>
+               <input /> <label />
+           </li>
+           <li>
+               <input /> <label />
+           </li>
+       </ul>
+   </li>
+ *
+ */
+.Label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  line-height: 1;
+  cursor: pointer;
+  color: #686768; }
+
+/**
+     * Extra help text in `label`s, e.g.:
+     *
+       <label>Card number <small class=additional>No spaces</small></label>
+     *
+     */
+.Additional {
+  display: block;
+  font-weight: normal; }
+
+/*
+ * Groups of checkboxes and radios, e.g.:
+ *
+   <li>
+       <ul class=check-list>
+           <li>
+               <input /> <label />
+           </li>
+           <li>
+               <input /> <label />
+           </li>
+       </ul>
+   </li>
+ *
+ */
+/*
+     * Labels in check-lists
+     */
+/**
+ * Spoken forms are for forms that read like spoken word, e.g.:
+ *
+   <li class=spoken-form>
+       Hello, my <label for=spoken-name>name</label> is
+       <input type=text class=text-input id=spoken-name>. My home
+       <label for=country>country</label> is
+       <select id=country>
+           <option>UK</option>
+           <option>US</option>
+           <option>Other</option>
+       </select>
+   </li>
+ *
+ */
+/**
+ * Extra help text displayed after a field when that field is in focus, e.g.:
+ *
+   <label for=email>Email:</label>
+   <input type=email class=text-input id=email>
+   <small class=extra-help>.edu emails only</small>
+ *
+ * We leave the help text in the document flow and merely set it to
+ * `visibility:hidden;`. This means that it won’t interfere with anything once
+ * it reappears.
+ *
+ */
+/*small*/
+.ErrorMsg {
+  display: none;
+  color: #e17492; }
+
+.isInvalid .TextInput {
+  border: 1px solid #e17492; }
+
+.isInvalid .TextArea {
+  border: 1px solid #e17492; }
+
+.isInvalid.cs-select {
+  border: 1px solid #e17492;
+  border-radius: 5px; }
+
+.isInvalid .ErrorMsg {
+  display: block; }
+
+.TextInput.isInvalid {
+  border: 1px solid #e17492 !important; }
+
+/*------------------------------------*    $SPLIT UI
+\*------------------------------------*/
+.Split-desc {
+  border: 0 solid #e8ebed;
+  border-width: 0 0 1px;
+  color: #686768;
+  line-height: 2;
+  padding-top: 10px; }
+
+.Split-title {
+  color: #333132;
+  line-height: 2;
+  padding-top: 10px; }
+
+/*------------------------------------*    $SPLIT UI - more generaic, flex based split
+\*------------------------------------*/
+.SplitItems {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  line-height: 1.1;
+  margin-bottom: 0; }
+
+.SplitItems-row {
+  margin-bottom: 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.SplitItems-row:last-child {
+  margin-bottom: 0; }
+
+.SplitItems-desc {
+  float: right; }
+
+.SplitItems-title--lg {
+  padding: 8px 0; }
+
+.SplitItems-generalInfo {
+  padding: 7px 0 12px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+
+/*------------------------------------*    #CROP TOOL
+\*------------------------------------*/
+.CropTool-frame {
+  width: 125px;
+  height: 125px;
+  overflow: hidden; }
+
+.LogInInfo-title {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  opacity: .5;
+  line-height: 1;
+  margin-bottom: -2px; }
+
+.LogInInfo-name {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  line-height: 1;
+  color: #fff; }
+
+.LoginBox {
+  width: 282px;
+  margin: 80px auto 0; }
+
+.LoginBox-logo {
+  width: 90px; }
+
+.LoginBox-hd {
+  color: #8d8d92;
+  font-size: 20px;
+  width: 270px;
+  font-family: "SlatePro-Bk", sans-serif;
+  font-weight: 100;
+  margin: 45px auto 25px auto; }
+
+.LoginBox-submit {
+  display: block;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 15px;
+  margin-bottom: 25px; }
+
+.LoginBox-recovery {
+  display: block;
+  width: 100%; }
+
+.LoginBox-error {
+  height: 45px;
+  width: 100%;
+  background-color: #E74F57;
+  background-image: url("/images/warning.png");
+  background-position: 243px 14px;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 14px auto 25px;
+  display: none;
+  padding: 11px 52px 0 20px;
+  border-radius: 3px;
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 100;
+  font-family: "SlatePro", sans-serif;
+  text-align: left; }
+
+.LoginBox-info {
+  display: none; }
+
+.LoginBox.is-invalid .LoginBox-submit {
+  display: none; }
+
+.LoginBox.is-invalid .LoginBox-error {
+  display: block; }
+
+.LoginBox.is-ok .LoginBox-info {
+  display: block; }
+
+.LoginBox.is-ok input {
+  display: none; }
+
+.Ico {
+  display: inline-block; }
+
+.Ico--settings {
+  background: url(../svg/ico-settings.svg) no-repeat 0 0;
+  width: 31px;
+  height: 26px;
+  background-position: center; }
+
+.Ico--indoor {
+  background: url(../svg/ico-indoor.svg) no-repeat 0 0;
+  width: 31px;
+  height: 26px;
+  background-position: center; }
+
+.Ico--physicalWeb {
+  background: url(../svg/ico-physical-web.svg) no-repeat 0 0;
+  width: 29px;
+  height: 67px;
+  background-position: center;
+  margin-bottom: -30px; }
+
+.Ico--mirror {
+  background: url(../svg/ico-mirror.svg) no-repeat 0 0;
+  width: 29px;
+  height: 67px;
+  background-position: center;
+  margin-bottom: -19px; }
+
+.Ico--Wearable {
+  background: url(../svg/ico-wearable.svg) no-repeat 0 0;
+  width: 29px;
+  height: 67px;
+  background-position: center;
+  margin-bottom: -19px; }
+
+.Ico--profile {
+  background: url(../svg/ico-profile.svg) no-repeat center center;
+  width: 30px;
+  height: 34px;
+  background-size: 24px;
+  bottom: -11px; }
+
+.Ico--nearables {
+  background: url(../svg/ico-sticker.svg) no-repeat 0 0;
+  width: 33px;
+  height: 25px;
+  background-position: center; }
+
+.Ico--beacons {
+  background: url(../svg/ico-beacon.svg) no-repeat 0 0;
+  width: 31px;
+  height: 32px;
+  background-position: center;
+  bottom: -11px; }
+
+.Ico--analytics {
+  background: url(../svg/ico-analytics.svg) no-repeat 0 0;
+  width: 31px;
+  height: 32px;
+  background-position: center;
+  bottom: -11px; }
+
+.Ico--apps {
+  background: url(../svg/ico-apps.svg) no-repeat 0 0;
+  width: 31px;
+  height: 30px;
+  background-position: center; }
+
+.Ico--logout {
+  background: url(../images/ico-logout.png) no-repeat 0 0;
+  width: 20px;
+  height: 13px;
+  transition: .2s; }
+
+.Ico--logout:hover,
+.Ico--logout:focus {
+  opacity: .5;
+  transition: .2s; }
+
+.Ico--app {
+  background: url(../images/app.png) no-repeat 0 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+  top: 4px;
+  left: 4px; }
+
+.Ico--api {
+  background: url(../images/api.png) no-repeat 0 0;
+  width: 19px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  left: 4px; }
+
+.Ico--picture {
+  background: url(../images/ico-pic.png) no-repeat 0 0;
+  width: 16px;
+  height: 16px; }
+
+.Ico--mintBeacon {
+  background: url(../images/beacons/mint.png) no-repeat 0 0; }
+
+.Ico--blackBeacon {
+  background: url(../images/beacons/black.png) no-repeat 0 0; }
+
+.Ico--blueberryBeacon {
+  background: url(../images/beacons/blueberry.png) no-repeat 0 0; }
+
+.Ico--iceBeacon {
+  background: url(../images/beacons/ice.png) no-repeat 0 0; }
+
+.Ico--whiteBeacon {
+  background: url(../images/beacons/white.png) no-repeat 0 0; }
+
+.Ico--lemonBeacon {
+  background: url(../images/beacons/lemon.png) no-repeat 0 0; }
+
+.Ico--beetrootBeacon {
+  background: url(../images/beacons/beetroot.png) no-repeat 0 0; }
+
+.Ico--candyBeacon {
+  background: url(../images/beacons/candy.png) no-repeat 0 0; }
+
+.Ico--transparentBeacon {
+  background: url(../images/beacons/transparent.png) no-repeat 0 0; }
+
+.Ico--coconutBeacon {
+  background: url(../images/beacons/coconut.png) no-repeat 0 0; }
+
+.Ico--contourBeacon {
+  background: url(../images/beacons/contour.png) no-repeat 0 0; }
+
+.CustomSelect {
+  width: 210px;
+  border: 1px solid #e9ebed;
+  border-radius: 3px;
+  overflow: hidden;
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 95% center; }
+
+.CustomSelect > select {
+  padding: 13px 35px 13px 20px;
+  color: #b8b8b8;
+  border: none;
+  width: 210px;
+  margin: 0;
+  font-family: "SlatePro-Light", sans-serif;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none; }
+
+/* Default custom select styles */
+div.cs-select {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-align: left;
+  background: #fff;
+  z-index: 100;
+  width: 100%;
+  max-width: 500px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+div.cs-select:focus {
+  outline: none;
+  /* For better accessibility add a style for this in your skin */ }
+
+.cs-select select {
+  display: none; }
+
+.cs-select span {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 11px 0 11px 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+/* Placeholder and selected option */
+.cs-select > span {
+  padding-right: 3em; }
+
+.cs-select > span::after,
+.cs-select .cs-selected span::after {
+  speak: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.cs-select > span::after {
+  background: url(../images/select-ico.svg) no-repeat center center;
+  content: '';
+  right: 11px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-size: 100%; }
+
+/* Options */
+.cs-select .cs-options {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  visibility: hidden;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2); }
+
+.cs-select.cs-active .cs-options {
+  visibility: visible; }
+
+.cs-select ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-radius: 3px; }
+
+.cs-select ul span {
+  padding: 11px; }
+
+.cs-select ul li.cs-focus span {
+  background-color: #ddd; }
+
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+  padding-left: 1em; }
+
+.cs-select li.cs-optgroup > span {
+  cursor: default; }
+
+/* UI */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?-rdnm34");
+  src: url("../fonts/icomoon/icomoon.eot?#iefix-rdnm34") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff?-rdnm34") format("woff"), url("../fonts/icomoon/icomoon.ttf?-rdnm34") format("truetype"), url("../fonts/icomoon/icomoon.svg?-rdnm34#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+div.cs-skin-border {
+  color: #333132;
+  line-height: 1;
+  background: transparent;
+  max-width: 600px; }
+
+@media screen and (max-width: 30em) {
+  div.cs-skin-border {
+    font-size: 1em; } }
+
+.cs-skin-border > span {
+  border: 0 solid #ccc;
+  border-width: 1px;
+  border-radius: 3px; }
+
+.cs-skin-border ul span::after {
+  content: '';
+  opacity: 0; }
+
+.cs-skin-border .cs-options {
+  opacity: 0;
+  transition: all 0.2s;
+  border: 0 solid #ccc;
+  border-width: 1px;
+  border-radius: 3px; }
+
+.cs-skin-border.cs-active .cs-options {
+  opacity: 1; }
+
+.cs-skin-border ul span {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.cs-skin-border .cs-options li span:hover,
+.cs-skin-border li.cs-focus span {
+  background-color: #63004A;
+  color: #fff; }
+
+.cs-select--highlight .Highlight:after {
+  content: '';
+  display: block;
+  position: absolute;
+  margin: -29px 0 0 13px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: inline-block; }
+
+.Highlight--LemonTart:after {
+  background-color: #b9b70e; }
+
+.cs-skin-border .cs-options .Highlight--LemonTart:hover span {
+  background-color: #b9b70e;
+  color: #fff; }
+
+.Highlight--SweetBeetroot:after {
+  background-color: #63004A; }
+
+.cs-skin-border .cs-options .Highlight--SweetBeetroot:hover span {
+  background-color: #63004A;
+  color: #fff; }
+
+.Highlight--CandyFloss:after {
+  background-color: #f5a4c7; }
+
+.cs-skin-border .cs-options .Highlight--CandyFloss:hover span {
+  background-color: #f5a4c7;
+  color: #fff; }
+
+.Highlight--BlueberryPie:after {
+  background-color: #414099; }
+
+.cs-skin-border .cs-options .Highlight--BlueberryPie:hover span {
+  background-color: #414099;
+  color: #fff; }
+
+.Highlight--IcyMarshmallow:after {
+  background-color: #b9e4fa; }
+
+.cs-skin-border .cs-options .Highlight--IcyMarshmallow:hover span {
+  background-color: #b9e4fa;
+  color: #fff; }
+
+.Highlight--MintCocktail:after {
+  background-color: #8BB49A; }
+
+.cs-skin-border .cs-options .Highlight--MintCocktail:hover span {
+  background-color: #8BB49A;
+  color: #fff; }
+
+.Highlight--VanillaPuff:after {
+  background-color: #fff;
+  border: 1px solid #edeeef; }
+
+.cs-skin-border .cs-options .Highlight--VanillaJello:hover span {
+  background-color: #fff;
+  color: #dee1e2; }
+
+.Highlight--LiquoriceSwirl:after {
+  background-color: #000; }
+
+.cs-skin-border .cs-options .Highlight--LiquoriceSwirl:hover span {
+  background-color: #000;
+  color: #fff; }
+
+.Highlight--CoconutPuff:after {
+  background-color: #fff;
+  border: 1px solid #edeeef; }
+
+.cs-skin-border .cs-options .Highlight--CoconutPuff:hover span {
+  background-color: #fff;
+  color: #dee1e2; }
+
+.cs-select--highlight .Highlight span {
+  padding-left: 43px; }
+
+.cs-skin-border ul span:after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #fcfcfc;
+  position: absolute;
+  z-index: 10;
+  opacity: 1;
+  bottom: 0;
+  left: 15px;
+  width: 100%; }
+
+.cs-skin-border .cs-options .Highlight span:hover:after {
+  background-color: inherit; }
+
+.cs-options > ul {
+  max-height: 350px;
+  overflow-x: auto;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+.Onoffswitch {
+  margin-top: 0;
+  position: relative;
+  width: 50px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+.Onoffswitch-checkbox {
+  display: none; }
+
+.Onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #f5f5f5;
+  border-radius: 14px; }
+
+.Onoffswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s; }
+
+.Onoffswitch-inner:before, .Onoffswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 26px;
+  padding: 0;
+  line-height: 26px;
+  font-size: 0px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box; }
+
+.Onoffswitch-inner:before {
+  content: "";
+  padding-left: 0px;
+  background-color: #9FCBAE;
+  color: #FFFFFF; }
+
+.Onoffswitch-inner:after {
+  content: "";
+  padding-right: 0px;
+  background-color: #ADB3BB;
+  color: #999999;
+  text-align: right; }
+
+.Onoffswitch-switch {
+  width: 22px;
+  margin: 4px;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 14px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  transition: all 0.3s ease-in 0s; }
+
+.Onoffswitch-checkbox:checked + .Onoffswitch-label .Onoffswitch-inner {
+  margin-left: 0; }
+
+.Onoffswitch-checkbox:checked + .Onoffswitch-label .Onoffswitch-switch {
+  right: 0px; }
+
+.isModalOpen {
+  overflow: hidden; }
+
+.Modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7); }
+
+.isModalOpen .Modal {
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.Modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px; }
+
+.Modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0; }
+
+@media (min-width: 768px) {
+  .Modal-dialog {
+    max-width: 1100px;
+    margin: 30px auto; }
+  .Modal-content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+  .Modal-sm {
+    width: 300px; } }
+
+@media (min-width: 992px) {
+  .Modal-lg {
+    width: 900px; } }
+
+.Modal-dialog--sml {
+  max-width: 555px;
+  margin: 30px auto; }
+
+.Modal-dialog--md {
+  max-width: 700px;
+  margin: 30px auto; }
+
+.Modal-footerItemEqual {
+  -ms-flex: 1;
+      flex: 1;
+  text-align: center; }
+
+.Modal-head {
+  background-color: #8BB49A;
+  color: #fff; }
+
+.Modal-head {
+  padding: 12px 24px; }
+
+.Modal-title {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.2; }
+
+.Modal-footer {
+  padding: 12px 24px;
+  background-color: #f5f5f5;
+  text-align: right; }
+
+.Modal-footer--spread {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-right: 0;
+  padding-left: 0; }
+
+.Modal {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: scale 0.5s;
+  display: block;
+  font-size: 16px; }
+
+.Modal.modalanimation-enter {
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0; }
+
+.Modal.modalanimation-enter-active {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  transition: opacity .5s, scale .5s; }
+
+.Modal.modalanimation-leave-active {
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0; }
+
+.Overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all .2s; }
+
+.Overlay.isVisible {
+  opacity: 1;
+  visibility: visible; }
+
+table.PricingTable {
+  font-size: 16px; }
+
+.min-width-cell {
+  min-width: 170px; }
+
+.u-fs18 {
+  font-size: 18px; }
+
+.u-fs14 {
+  font-size: 14px; }
+
+.PricingTable {
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 10px 0px;
+  margin: auto; }
+
+.PricingTable--handleOverflow {
+  overflow: auto; }
+
+.PricingTable th {
+  font-weight: normal; }
+
+.PricingTable-cell {
+  border-width: 1px 1px 0 0;
+  border: solid 1px #f6f6f6;
+  padding: 10px;
+  width: 22%;
+  background-color: #fff;
+  text-align: center; }
+
+.PricingTable-row--grey .PricingTable-cell {
+  background: #f6f6f6;
+  padding: 16px 20px;
+  color: #999999; }
+
+.PricingTable-verticalHeader {
+  background-color: #f6f6f6;
+  padding: 5px 10px; }
+
+.PricingTable-verticalHeader img {
+  max-width: 206px; }
+
+.PricingTable-roundedCorners {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+.PricingTable .SaasFeatureTick {
+  position: relative;
+  top: 3px; }
+
+.StripeElement {
+  background-color: white;
+  height: 40px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  transition: box-shadow .15s ease; }
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df; }
+
+.StripeElement--invalid {
+  border-color: #fa755a; }
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important; }
+
+.onboarding.has-modal .onboarding-toggle {
+  z-index: 1051; }
+
+.onboarding.has-modal.is-blue .onboarding-toggle {
+  color: #66c4ea; }
+
+.onboarding.has-modal.is-blue .onboarding-toggle-icon {
+  background: #66c4ea;
+  border-color: #66c4ea; }
+
+.onboarding.has-modal.is-blue .onboarding-part.is-details {
+  background: #66c4ea; }
+
+.onboarding.has-modal.is-blue .onboarding-part.is-details::before {
+  border-bottom-color: #66c4ea; }
+
+.onboarding.has-modal.is-blue .onboarding-step.is-current {
+  color: #66c4ea; }
+
+.onboarding.has-modal.is-blue .is-done .onboarding-step-icon {
+  color: #66c4ea; }
+
+.onboarding.has-modal.is-blue .is-current .onboarding-step-icon {
+  fill: #66c4ea; }
+
+.onboarding.has-modal.is-green .onboarding-toggle {
+  color: #98c4a8; }
+
+.onboarding.has-modal.is-green .onboarding-toggle-icon {
+  background: #98c4a8;
+  border-color: #98c4a8; }
+
+.onboarding.has-modal.is-green .onboarding-part.is-details {
+  background: #98c4a8; }
+
+.onboarding.has-modal.is-green .onboarding-part.is-details::before {
+  border-bottom-color: #98c4a8; }
+
+.onboarding.has-modal.is-green .onboarding-step.is-current {
+  color: #98c4a8; }
+
+.onboarding.has-modal.is-green .is-done .onboarding-step-icon {
+  color: #98c4a8; }
+
+.onboarding.has-modal.is-green .is-current .onboarding-step-icon {
+  fill: #98c4a8; }
+
+.onboarding.has-modal.is-yellow .onboarding-toggle {
+  color: #aead0d; }
+
+.onboarding.has-modal.is-yellow .onboarding-toggle-icon {
+  background: #ccc90f;
+  border-color: #ccc90f; }
+
+.onboarding.has-modal.is-yellow .onboarding-part.is-details {
+  background: #ccc90f; }
+
+.onboarding.has-modal.is-yellow .onboarding-part.is-details::before {
+  border-bottom-color: #ccc90f; }
+
+.onboarding.has-modal.is-yellow .onboarding-step.is-current {
+  color: #ccc90f; }
+
+.onboarding.has-modal.is-yellow .is-done .onboarding-step-icon {
+  color: #ccc90f; }
+
+.onboarding.has-modal.is-yellow .is-current .onboarding-step-icon {
+  fill: #ccc90f; }
+
+.onboarding-background {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  background: rgba(245, 245, 245, 0.72); }
+
+.onboarding-dialog {
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 90%;
+  min-width: 900px;
+  min-height: 630px;
+  margin-top: 70px;
+  background: #fff;
+  border-radius: 5px; }
+
+.onboarding-part {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  padding: 20px 0;
+  position: relative; }
+  .onboarding-part.is-details {
+    border-radius: 5px;
+    text-align: center; }
+    .onboarding-part.is-details::before {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: -11px;
+      left: 63px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 11px solid transparent; }
+
+.onboarding-steps {
+  max-width: 340px; }
+
+.onboarding-details {
+  text-align: center;
+  border-radius: 5px; }
+
+.onboarding-title {
+  width: 298.1px;
+  height: 27px;
+  margin: 0 0 10px;
+  font-family: "BrandonText-Medium";
+  font-size: 20px;
+  color: #a7a9ac; }
+
+.onboarding-disclaimer {
+  margin: 0 45px 65px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #a7a9ac; }
+
+.onboarding-steps-list {
+  margin-left: 29px;
+  position: relative;
+  list-style-type: none; }
+  .onboarding-steps-list::before {
+    content: '';
+    width: 1px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    background: #bcbec0; }
+
+.onboarding-step {
+  margin-bottom: 34px;
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  color: #a7a9ac; }
+  .onboarding-step.is-current {
+    font-family: "BrandonText-Medium";
+    font-size: 24px; }
+
+.onboarding-step-icon {
+  position: absolute;
+  left: -29px;
+  top: -2px;
+  background: #fff;
+  color: #fff; }
+
+.onboarding-details-description {
+  max-width: 330px;
+  margin: 0 auto 36px;
+  font-family: "BrandonText-Medium";
+  font-size: 20px;
+  line-height: 21px;
+  color: #fff; }
+
+.onboarding-details-video_wrapper {
+  width: 50%;
+  overflow: hidden;
+  margin: 0 auto 50px;
+  border-radius: 27px; }
+
+.onboarding-details-video {
+  max-width: 100%; }
+
+.onboarding-close {
+  position: absolute;
+  top: 14px;
+  right: 14px; }
+
+.onboarding-skip {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  color: #fff;
+  opacity: .7;
+  line-height: 16px; }
+  .onboarding-skip:hover, .onboarding-skip:focus {
+    opacity: 1;
+    text-decoration: none; }
+
+.onboarding-skip-icon {
+  position: relative;
+  top: 1px;
+  margin-left: 2px; }
+
+.onboarding-toggle {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative; }
+  .onboarding-toggle:focus {
+    outline: none; }
+
+.onboarding-toggle-icon {
+  display: -ms-flexbox;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: solid 1px #fff;
+  color: #fff; }
+  .onboarding-toggle-icon svg {
+    position: relative;
+    left: -1px; }
+
+.onboarding-action {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 17px;
+  -ms-flex-align: center;
+      align-items: center; }
+  .onboarding-action svg {
+    margin-right: 9px; }
+  .onboarding-action:last-of-type {
+    margin: 0; }
+
+.BagOfBeacons {
+  display: block;
+  margin: 0 auto 32px; }
+
+.DevKit {
+  display: block;
+  margin: 0 auto 48px; }
+
+.Loading {
+  display: inline-block; }
+
+.Loading-one {
+  opacity: 0;
+  -webkit-animation: LoadingDot 1.3s infinite;
+          animation: LoadingDot 1.3s infinite;
+  -webkit-animation-delay: 0.0s;
+          animation-delay: 0.0s; }
+
+.Loading-two {
+  opacity: 0;
+  -webkit-animation: LoadingDot 1.3s infinite;
+          animation: LoadingDot 1.3s infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+.Loading-three {
+  opacity: 0;
+  -webkit-animation: LoadingDot 1.3s infinite;
+          animation: LoadingDot 1.3s infinite;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+
+@-webkit-keyframes LoadingDot {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes LoadingDot {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.InputDropdown {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  top: 100%;
+  border: 1px solid #ccc;
+  z-index: 20;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2); }
+
+.InputDropdown--flat {
+  position: static;
+  box-shadow: none; }
+
+.InputDropdown-list {
+  max-height: 238px;
+  overflow-y: scroll; }
+
+.InputDropdown-categories {
+  min-height: 120px; }
+
+.InputDropdown-item {
+  color: inherit;
+  display: block;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.3;
+  cursor: pointer; }
+
+.InputDropdown-ico {
+  height: 36px;
+  background-size: contain; }
+
+.InputDropdown-item:hover {
+  background-color: #F4F4F4;
+  text-decoration: none;
+  transition: color .3s; }
+
+.InputDropdown-hd {
+  text-overflow: ellipsis; }
+
+.InputDropdown-ft {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  line-height: 40px;
+  padding: 3px; }
+
+.InputDropdown-bd {
+  min-height: 120px;
+  text-align: center;
+  padding-top: 45px;
+  color: #999; }
+
+.ItemCompleter {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.ItemCompleter-item.isEdited {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-order: 1;
+      order: 1; }
+
+.ItemCompleter-ico {
+  width: 40px;
+  margin-right: 10px;
+  cursor: pointer; }
+
+.ItemCompleter-item input {
+  display: none; }
+
+.ItemCompleter-item.isEdited input {
+  display: block; }
+
+.Progress {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0 auto 60px;
+  background-color: #F2F2F2;
+  height: 5px;
+  width: 755px; }
+
+.Progress-step {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #F2F2F2;
+  margin-top: -5px;
+  border-radius: 50%;
+  position: relative; }
+
+.Progress-step.isCompleated {
+  background-color: #949494; }
+
+.Progress-step.isCompleated:after {
+  content: '';
+  display: block;
+  width: 117px;
+  height: 5px;
+  background-color: #949494;
+  position: absolute;
+  right: 50%;
+  top: 6px; }
+
+.Progress-step.isCompleated:first-child:after {
+  display: none; }
+
+.Progress-step:last-child {
+  margin-right: -2px; }
+
+.Progress-step:first-child {
+  margin-left: -2px; }
+
+.Progress-title {
+  position: absolute;
+  left: 50%;
+  display: block;
+  word-wrap: normal;
+  top: 30px;
+  white-space: nowrap;
+  width: 100px;
+  margin-left: -50px;
+  text-align: center; }
+
+.ProgressIco {
+  display: block;
+  width: 130px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto 20px;
+  background-position: 50%; }
+
+.ProgressIco--ordered {
+  background-image: url(../../images/order/charged.png); }
+
+.ProgressIco--verification {
+  background-image: url(../../images/order/verification.png); }
+
+.ProgressIco--manufacturing {
+  background-image: url(../../images/order/manufacturing.png); }
+
+.ProgressIco--payment {
+  background-image: url(../../images/order/payment.png); }
+
+.ProgressIco--shipping {
+  background-image: url(../../images/order/shipping.png); }
+
+.ProgressIco--in_transit {
+  background-image: url(../../images/order/in_transit.png); }
+
+.ProgressIco--delivered {
+  background-image: url(../../images/order/delivered.png); }
+
+.OrderIco {
+  display: block;
+  width: 130px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.OrderIco--bulkbag {
+  background-image: url(../../images/box_bulkbag.png); }
+
+.OrderIco--devkit {
+  background-image: url(../../images/box_devkit_proximity.png); }
+
+.OrderIco--location_devkit {
+  background-image: url(../../images/box_devkit_location.png); }
+
+.OrderIco--stickers {
+  background-image: url(../../images/box_stickers.png); }
+
+.OrderIco--xmas_box {
+  background-image: url(../../images/box_xmas_box.png); }
+
+.OrderIco--mirror_devkit {
+  background-image: url(../../images/mirror-devkit-box.png); }
+
+.OrderIco--location_devkit_with_uwb {
+  background-image: url(../../images/box_location_devkit_with_uwb.png); }
+
+.OrderIco--proximity_devkit_2018 {
+  background-image: url(../../images/box_proximity_devkit_2018.png); }
+
+.OrderIco--proximity_bulkbag_2018 {
+  background-image: url(../../images/box_proximity_bulkbag_2018.png); }
+
+.MainSearch {
+  position: relative; }
+
+.MainSearch-clear {
+  display: block;
+  width: 32px;
+  text-align: center;
+  cursor: pointer;
+  right: 0;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: #ccc;
+  text-decoration: none; }
+
+.MainSearch-clear:hover, .MainSearch-clear:active, .MainSearch-clear:focus {
+  text-decoration: none; }
+
+.MainSearch-input {
+  padding-right: 32px; }
+
+.Pagination {
+  text-align: center;
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em; }
+
+.Pagination-item {
+  padding: 6px 12px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  border: 1px solid #63004A;
+  background-color: inherit;
+  border-radius: 3px;
+  color: #63004A;
+  margin-right: 6px;
+  margin-left: 6px; }
+
+.Pagination-item.is-current {
+  background-color: #63004A;
+  color: #F5F5F5; }
+
+.Pagination-link {
+  padding: 12px;
+  margin: -12px; }
+
+.isInputWrapperHidden {
+  overflow: hidden;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0;
+  transition: 0.8s cubic-bezier(0, 1, 0.5, 1); }
+
+.isInputWrapperShown {
+  transition: 0.8s ease-in;
+  max-height: 500px;
+  overflow: hidden;
+  opacity: 1; }
+
+/*------------------------------------*    $APP VISUALISATION
+\*------------------------------------*/
+.AppVisualisation {
+  position: relative; }
+
+.AppVisualisation-device {
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+
+.AppVisualisation-canvas {
+  height: 492px; }
+
+.AppVisualisation-screen {
+  position: absolute;
+  top: 56px;
+  left: 14px;
+  right: 14px;
+  bottom: 65px;
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #fff;
+  font-size: 20px; }
+
+.AppVisualisation-bd {
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+
+.AppVisualisation-subject {
+  top: 100px;
+  position: absolute;
+  width: 40px; }
+
+.AppVisualisation-prop {
+  width: 20px;
+  height: 30px;
+  background-size: contain; }
+
+.AppVisualisation-range {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.AppVisualisation-rangeMarshmallow {
+  border: 1px solid #C4DCC7;
+  background-color: rgba(196, 221, 235, 0.4);
+  top: -50px;
+  left: 110px; }
+
+.AppVisualisation-rangeBlueberry {
+  border: 1px solid rgba(97, 87, 144, 0.4);
+  background-color: rgba(97, 87, 144, 0.2);
+  top: 330px;
+  left: 40px; }
+
+.AppVisualisation-rangeMint {
+  border: 1px solid #C4DCC7;
+  background-color: rgba(196, 220, 199, 0.4);
+  top: 150px;
+  left: 280px; }
+
+.AppVisualisation-rangeMint--proximity {
+  top: 140px;
+  left: 20px; }
+
+.AppVisualisation-screenRange {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 18px;
+  font-family: "SlatePro-Bk", sans-serif;
+  font-weight: 500; }
+
+.is-fromScreen {
+  z-index: 10; }
+
+.is-toScreen {
+  z-index: 9; }
+
+.AppVisualisation-screenMintRange {
+  background-color: #C4DCC7; }
+
+.AppVisualisation-screenBlueberryRange {
+  background-color: #615790; }
+
+.AppVisualisation-screenMarshmallowRange {
+  background-color: #C4DDEB; }
+
+.AppVisualisation-outOfRange {
+  background-color: #E0E4E5;
+  color: #fff; }
+
+.AppVisualisation-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAH0lEQVQYV2NkIAAY6axg7dq1/x0cHBiEhYXhVtPBDQDW6wQJ6doAVAAAAABJRU5ErkJggg==);
+  border: 1px solid #e1e4e5;
+  background-color: whitesmoke; }
+
+.AppVisualisation-appHolder {
+  border: 2px dashed #fff;
+  width: 25px;
+  height: 25px;
+  border-style: dotted;
+  border-radius: 6px; }
+
+.AppVisualisation-NotifWrapper {
+  border: 1px solid #fff;
+  border-width: 1px 0;
+  padding: 11px 0;
+  margin-left: 20px;
+  margin-top: 10px; }
+
+.AppVisualisation-appHolder--heroApp {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px; }
+
+.AppVisualisation-rangeBlueberry--heroApp {
+  top: 140px;
+  left: 20px; }
+
+.AppVisualisation-range--distanceApp {
+  top: -35px;
+  left: -85px;
+  width: 400px;
+  height: 400px; }
+
+.handle-1,
+.handle-2,
+.handle-3 {
+  background: red;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 72px;
+  left: 230px;
+  z-index: 100;
+  opacity: .3; }
+
+.handle-3 {
+  top: 374px;
+  left: 147px; }
+
+.handle-2 {
+  top: 222px;
+  left: 330px; }
+
+.BeaconOutline {
+  display: inline-block;
+  margin-bottom: 40px; }
+
+.BeaconOutline--60 {
+  width: 60px; }
+
+.AppVisualisation-distanceDisclaimer {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0; }
+
+.AppVisualisation-distance {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0; }
+
+.AppVisualation-web {
+  background-color: #ededed;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.TabNav {
+  display: -ms-flexbox;
+  display: flex; }
+
+.TabNav-tab {
+  min-height: 35px;
+  line-height: 35px;
+  border: 0 solid #63004A;
+  border-width: 1px 0 1px 1px;
+  padding: 0 20px;
+  cursor: pointer;
+  display: inline-block;
+  transition: .2s all;
+  color: #63004A; }
+
+.TabNav-tab:first-child {
+  border-radius: 3px 0 0 3px; }
+
+.TabNav-tab:last-child {
+  border-radius: 0 3px 3px 0;
+  border-right-width: 1px; }
+
+.TabNav-tab:hover,
+.TabNav-tab.is-active {
+  background-color: #63004A;
+  color: #fff; }
+
+.Application {
+  min-height: 110px;
+  border: 1px solid #e1e4e5;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0 23px;
+  margin-bottom: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.Application-body {
+  -ms-flex: 1;
+      flex: 1;
+  overflow: hidden; }
+
+.Application-data {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  line-height: 1.3;
+  font-family: "SlatePro-Bk", sans-serif; }
+
+.Application-name {
+  color: #333132;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  display: inline-block;
+  font-weight: normal;
+  font-family: "SlatePro", sans-serif; }
+
+.Split--noBorder {
+  border: none; }
+
+.Application-permissions {
+  float: right;
+  margin-top: -4px; }
+
+.Application-readOnlyDescription {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.07;
+  color: #bcbec0;
+  padding-left: 31px;
+  padding-top: 9px; }
+
+.Badge {
+  background-color: #8F0083;
+  line-height: 21px;
+  border-radius: 10px;
+  display: inline-block;
+  min-width: 19px;
+  height: 19px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  text-align: center;
+  font-style: normal;
+  color: #fff;
+  padding: 0 5px 0 4px; }
+
+.Badge--error {
+  background-color: #e03854; }
+
+.Badge--warning {
+  background-color: rgba(255, 255, 0, 0.15); }
+
+.Tooltip {
+  color: #e03854;
+  background-color: #fbdce3;
+  border: 1px solid #eb96a4;
+  border-radius: 5px;
+  padding: 10px 14px;
+  position: absolute;
+  z-index: 100;
+  line-height: 25px;
+  margin-top: 10px;
+  max-width: 460px; }
+
+.Tooltip--right {
+  right: 0; }
+
+.Tooltip--left {
+  left: 0; }
+
+.Tooltip--bottom {
+  top: 100%;
+  margin-top: 10px; }
+
+.Tooltip--top {
+  bottom: 100%;
+  margin-bottom: 10px; }
+
+.Tooltip-pointer {
+  position: absolute; }
+
+.Tooltip-pointer--left {
+  left: 30px; }
+
+.Tooltip-pointer--right {
+  right: 30px; }
+
+.Tooltip-pointer--top {
+  top: 0; }
+
+.Tooltip-pointer--bottom {
+  top: calc(100% + 10px); }
+
+.Tooltip-pointer--top:after, .Tooltip-pointer--top:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.Tooltip-pointer--top:after {
+  border-color: rgba(251, 220, 227, 0);
+  border-bottom-color: #fbdce3;
+  border-width: 10px;
+  margin-left: -10px; }
+
+.Tooltip-pointer--top:before {
+  border-color: rgba(235, 150, 164, 0);
+  border-bottom-color: #eb96a4;
+  border-width: 11px;
+  margin-left: -11px; }
+
+.Tooltip-pointer--bottom:after, .Tooltip-pointer--bottom:before {
+  top: -10px;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.Tooltip-pointer--bottom:after {
+  border-color: rgba(251, 220, 227, 0);
+  border-top-color: #fbdce3;
+  border-width: 10px;
+  margin-left: -10px; }
+
+.Tooltip-pointer--bottom:before {
+  border-color: rgba(235, 150, 164, 0);
+  border-top-color: #eb96a4;
+  border-width: 11px;
+  margin-left: -11px; }
+
+.DemoSlider {
+  width: 1000px;
+  outline: 1px solid #ccc;
+  padding: 1px;
+  overflow: hidden;
+  height: 620px; }
+
+.DemoSlider-demoPicture {
+  width: 100%; }
+
+.DemoSlider-list {
+  position: relative; }
+
+.DemoSlider-item {
+  position: absolute;
+  top: 0;
+  transition: .01s; }
+
+.DemoSlider-active1 .DemoSlider-item--1 {
+  display: none; }
+
+.DemoSlider-item--5.isInactive {
+  display: none !important; }
+
+.DemoSlider--active5 .DemoSlider-item--5 {
+  opacity: 0; }
+
+.DemoSlider--active4 .DemoSlider-item--5 {
+  opacity: 0; }
+
+.DemoSlider--active4 .DemoSlider-item--4 {
+  opacity: 0; }
+
+.DemoSlider--active3 .DemoSlider-item--5,
+.DemoSlider--active3 .DemoSlider-item--4 {
+  opacity: 0; }
+
+.DemoSlider--active3 .DemoSlider-item--3 {
+  opacity: 0; }
+
+.DemoSlider--active2 .DemoSlider-item--5,
+.DemoSlider--active2 .DemoSlider-item--3,
+.DemoSlider--active2 .DemoSlider-item--4 {
+  opacity: 0; }
+
+.DemoSlider--active2 .DemoSlider-item--2 {
+  opacity: 0; }
+
+.AdwordLinkItem {
+  min-height: 110px;
+  border: 1px solid #e1e4e5;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0 23px 0 0;
+  margin-bottom: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.AdwordLinkItem-name {
+  color: #333132;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1;
+  display: inline-block;
+  font-weight: normal;
+  font-family: "SlatePro", sans-serif; }
+
+.AdwordLinkItem-broadcastingData {
+  overflow: hidden;
+  -ms-flex-preferred-size: 230px;
+      flex-basis: 230px;
+  font-size: 14px;
+  line-height: 1.3;
+  font-family: "SlatePro-Bk", sans-serif;
+  margin: 0; }
+
+.AdwordLinkItem-analytics {
+  width: 64px; }
+
+.AdwordLinkItem-dataSeparator {
+  width: 1px;
+  height: 87px;
+  background-color: #E4E4E4; }
+
+.AdwordLinkItem-broadcastingData {
+  -ms-flex: 1;
+      flex: 1; }
+
+.Mirror {
+  min-height: 110px;
+  border: 1px solid #e1e4e5;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0 23px 0 0;
+  margin-bottom: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.Mirror-picture {
+  background: url(../svg/ico-mirror-md.svg) no-repeat 0 0;
+  background-size: contain;
+  width: 58px;
+  height: 47px;
+  display: inline-block;
+  margin-right: 12px;
+  position: relative; }
+
+.Mirror-picture--small {
+  width: 40px;
+  height: 30px; }
+
+.Mirror-name {
+  color: #333132;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1;
+  display: inline-block;
+  font-weight: normal;
+  font-family: "SlatePro", sans-serif; }
+
+.Mirror-data {
+  font-size: 14px;
+  line-height: 1.3;
+  font-family: "SlatePro-Bk", sans-serif;
+  margin: 0; }
+
+.Mirror-dataLabelRow {
+  min-width: 60px; }
+
+.Mirror-deviceData {
+  -ms-flex: 1;
+      flex: 1;
+  overflow: hidden; }
+
+.Mirror-select {
+  padding: 32px 12px 32px 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 5px;
+  position: relative; }
+
+.Mirror-selectIndicator {
+  padding: 7px 12px;
+  border-radius: 7px; }
+
+.Wearable {
+  min-height: 110px;
+  border: 1px solid #e1e4e5;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0 23px 0 0;
+  margin-bottom: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.Wearable-picture {
+  background: url(../svg/ico-wearable-md.svg) no-repeat 0 0;
+  background-size: contain;
+  width: 58px;
+  height: 47px;
+  display: inline-block;
+  margin-right: 12px;
+  position: relative; }
+
+.Wearable-name {
+  color: #333132;
+  font-size: 1.125rem;
+  line-height: 1;
+  display: inline-block;
+  font-weight: normal;
+  font-family: "SlatePro", sans-serif; }
+
+.Wearable-data {
+  font-size: 14px;
+  line-height: 1.3;
+  font-family: "SlatePro-Bk", sans-serif;
+  margin: 0; }
+
+.Wearable-dataLabelRow {
+  min-width: 60px; }
+
+.Wearable-deviceData {
+  -ms-flex: 1;
+      flex: 1;
+  overflow: hidden; }
+
+.Wearable-select {
+  padding: 32px 12px 32px 12px;
+  cursor: auto;
+  border-radius: 5px;
+  position: relative; }
+
+.Wearable-selectIndicator {
+  padding: 7px 12px;
+  border-radius: 7px; }
+
+/**
+ * React Select
+ * ============
+ * Created by Jed Watson and Joss Mackison for KeystoneJS, http://www.keystonejs.com/
+ * https://twitter.com/jedwatson https://twitter.com/jossmackison https://twitter.com/keystonejs
+ * MIT License: https://github.com/JedWatson/react-select
+*/
+.Select {
+  position: relative; }
+
+.Select,
+.Select div,
+.Select input,
+.Select span {
+  box-sizing: border-box; }
+
+.Select.is-disabled > .Select-control {
+  background-color: #f9f9f9; }
+
+.Select.is-disabled > .Select-control:hover {
+  box-shadow: none; }
+
+.Select.is-disabled .Select-arrow-zone {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.35; }
+
+.Select-control {
+  background-color: #fff;
+  border-color: #d9d9d9 #ccc #b3b3b3;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #333;
+  cursor: default;
+  display: table;
+  border-spacing: 0;
+  border-collapse: separate;
+  height: 36px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.Select-control:hover {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06); }
+
+.Select-control .Select-input:focus {
+  outline: none; }
+
+.is-searchable.is-open > .Select-control {
+  cursor: text; }
+
+.is-open > .Select-control {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #fff;
+  border-color: #b3b3b3 #ccc #d9d9d9; }
+
+.is-open > .Select-control .Select-arrow {
+  top: -2px;
+  border-color: transparent transparent #999;
+  border-width: 0 5px 5px; }
+
+.is-searchable.is-focused:not(.is-open) > .Select-control {
+  cursor: text; }
+
+.is-focused:not(.is-open) > .Select-control {
+  border-color: #007eff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px rgba(0, 126, 255, 0.1); }
+
+.Select-placeholder,
+.Select--single > .Select-control .Select-value {
+  bottom: 0;
+  color: #aaa;
+  left: 0;
+  line-height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+  color: #333; }
+
+.has-value.Select--single > .Select-control .Select-value a.Select-value-label,
+.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label {
+  cursor: pointer;
+  text-decoration: none; }
+
+.has-value.Select--single > .Select-control .Select-value a.Select-value-label:hover,
+.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:hover,
+.has-value.Select--single > .Select-control .Select-value a.Select-value-label:focus,
+.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:focus {
+  color: #007eff;
+  outline: none;
+  text-decoration: underline; }
+
+.Select-input {
+  height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle; }
+
+.Select-input > input {
+  width: 100%;
+  background: none transparent;
+  border: 0 none;
+  box-shadow: none;
+  cursor: default;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  outline: none;
+  line-height: 14px;
+  /* For IE 8 compatibility */
+  padding: 8px 0 12px;
+  /* For IE 8 compatibility */
+  -webkit-appearance: none; }
+
+.is-focused .Select-input > input {
+  cursor: text; }
+
+.has-value.is-pseudo-focused .Select-input {
+  opacity: 0; }
+
+.Select-control:not(.is-searchable) > .Select-input {
+  outline: none; }
+
+.Select-loading-zone {
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 16px; }
+
+.Select-loading {
+  -webkit-animation: Select-animation-spin 400ms infinite linear;
+  animation: Select-animation-spin 400ms infinite linear;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-right-color: #333;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle; }
+
+.Select-clear-zone {
+  -webkit-animation: Select-animation-fadeIn 200ms;
+  animation: Select-animation-fadeIn 200ms;
+  color: #999;
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 17px; }
+
+.Select-clear-zone:hover {
+  color: #D0021B; }
+
+.Select-clear {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1; }
+
+.Select--multi .Select-clear-zone {
+  width: 17px; }
+
+.Select-arrow-zone {
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 25px;
+  padding-right: 5px; }
+
+.Select-arrow {
+  border-color: #999 transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 2.5px;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  position: relative; }
+
+.is-open .Select-arrow,
+.Select-arrow-zone:hover > .Select-arrow {
+  border-top-color: #666; }
+
+.Select--multi .Select-multi-value-wrapper {
+  display: inline-block; }
+
+.Select .Select-aria-only {
+  display: inline-block;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  float: left; }
+
+@-webkit-keyframes Select-animation-fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes Select-animation-fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.Select-menu-outer {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top-color: #e6e6e6;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-top: -1px;
+  max-height: 200px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch; }
+
+.Select-menu {
+  max-height: 198px;
+  overflow-y: auto; }
+
+.Select-option {
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #666666;
+  cursor: pointer;
+  display: block;
+  padding: 8px 10px; }
+
+.Select-option:last-child {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.Select-option.is-selected {
+  background-color: #f5faff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.04);
+  color: #333; }
+
+.Select-option.is-focused {
+  background-color: #ebf5ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.08);
+  color: #333; }
+
+.Select-option.is-disabled {
+  color: #cccccc;
+  cursor: default; }
+
+.Select-noresults {
+  box-sizing: border-box;
+  color: #999999;
+  cursor: default;
+  display: block;
+  padding: 8px 10px; }
+
+.Select--multi .Select-input {
+  vertical-align: middle;
+  margin-left: 10px;
+  padding: 0; }
+
+.Select--multi.has-value .Select-input {
+  margin-left: 5px; }
+
+.Select--multi .Select-value {
+  background-color: #ebf5ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.08);
+  border-radius: 2px;
+  border: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border: 1px solid rgba(0, 126, 255, 0.24);
+  color: #007eff;
+  display: inline-block;
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-left: 5px;
+  margin-top: 5px;
+  vertical-align: top; }
+
+.Select--multi .Select-value-icon,
+.Select--multi .Select-value-label {
+  display: inline-block;
+  vertical-align: middle; }
+
+.Select--multi .Select-value-label {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  cursor: default;
+  padding: 2px 5px; }
+
+.Select--multi a.Select-value-label {
+  color: #007eff;
+  cursor: pointer;
+  text-decoration: none; }
+
+.Select--multi a.Select-value-label:hover {
+  text-decoration: underline; }
+
+.Select--multi .Select-value-icon {
+  cursor: pointer;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border-right: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border-right: 1px solid rgba(0, 126, 255, 0.24);
+  padding: 1px 5px 3px; }
+
+.Select--multi .Select-value-icon:hover,
+.Select--multi .Select-value-icon:focus {
+  background-color: #d8eafd;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 113, 230, 0.08);
+  color: #0071e6; }
+
+.Select--multi .Select-value-icon:active {
+  background-color: #c2e0ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.24); }
+
+.Select--multi.is-disabled .Select-value {
+  background-color: #fcfcfc;
+  border: 1px solid #e3e3e3;
+  color: #333; }
+
+.Select--multi.is-disabled .Select-value-icon {
+  cursor: not-allowed;
+  border-right: 1px solid #e3e3e3; }
+
+.Select--multi.is-disabled .Select-value-icon:hover,
+.Select--multi.is-disabled .Select-value-icon:focus,
+.Select--multi.is-disabled .Select-value-icon:active {
+  background-color: #fcfcfc; }
+
+@keyframes Select-animation-spin {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn); } }
+
+@-webkit-keyframes Select-animation-spin {
+  to {
+    -webkit-transform: rotate(1turn); } }
+
+.AnalyticsRealTime {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .AnalyticsRealTime .Analytics-title {
+    font-size: 60px; }
+  .AnalyticsRealTime .Well {
+    padding: 80px 40px; }
+  .AnalyticsRealTime .Analytics-label {
+    font-size: 16px; }
+
+.AnalyticsRealTime--picture-icon {
+  width: 69px;
+  height: 83px;
+  display: inline-block;
+  background: url(../svg/realtime.svg) no-repeat 50% 50%; }
+
+.Analytics--picture {
+  width: 25px;
+  height: 29px;
+  display: inline-block; }
+
+.Analytics--picture-visits {
+  background: url(../svg/ico-visits.svg) no-repeat 50% 50%; }
+
+.Analytics--picture-visitors {
+  background: url(../svg/ico-visitors.svg) no-repeat 50% 50%; }
+
+.Analytics--picture-dwelltime {
+  background: url(../svg/ico-dwelltime.svg) no-repeat 50% 50%; }
+
+.Analytics--picture-device {
+  background: url(../svg/ico-device.svg) no-repeat 25% 25%;
+  background-size: 20px; }
+
+.Analytics--gridRow {
+  display: -ms-flexbox;
+  display: flex;
+  alignItems: stretch; }
+
+.MostVisitedDevicesBlock {
+  padding: 27px 27px;
+  width: 100%; }
+  .MostVisitedDevicesBlock .MostVisitedSlimColumn {
+    width: 30%; }
+  .MostVisitedDevicesBlock .MostVisitedTableCell {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .MostVisitedDevicesBlock .MostVisitedIdentifier {
+    font-size: 14px; }
+    .MostVisitedDevicesBlock .MostVisitedIdentifier span {
+      font-weight: lighter; }
+    .MostVisitedDevicesBlock .MostVisitedIdentifier span + span {
+      padding-left: 7px; }
+
+.EditAttachmentsHeader {
+  padding-bottom: 6px; }
+
+.AddAttachmentLabel {
+  color: #63004A;
+  position: absolute;
+  margin-top: -2px;
+  margin-left: -11px; }
+
+.AddAttachmentLabel--disabled {
+  color: #b585a9; }
+
+.AddAttachmentEntryButton {
+  cursor: pointer;
+  width: 80%; }
+
+.RemoveAttachmentEntry {
+  font-size: 0.75rem;
+  float: right;
+  margin-left: 5px;
+  margin-top: 3px;
+  cursor: pointer; }
+
+.RemoveAttachmentEntry-Icon {
+  margin-left: 9px; }
+
+.EditAttachmentLabel {
+  position: absolute;
+  margin-left: 14px;
+  margin-top: -7px;
+  color: #63004A; }

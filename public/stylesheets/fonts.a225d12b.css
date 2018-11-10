@@ -1,0 +1,38 @@
+/* @license
+ * MyFonts Webfont Build ID 2551593, 2013-05-09T06:40:04-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Slate Std Book by Monotype Imaging
+ * URL: http://www.myfonts.com/fonts/mti/slate/std-book/
+ * Copyright: Copyright 2006 Monotype Imaging Inc. All rights reserved.
+ *
+ * Webfont: Brandon Text Medium by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/medium/
+ * Copyright: Copyright (c) 2012 by Hannes von Doehren. All rights reserved.
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2551593
+ *
+ * Webfont: Brandon Text Regular by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/regular/
+ * Copyright: Copyright (c) 2012 by Hannes von Doehren. All rights reserved.
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2551607
+ * © 2013 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/26ef29");
+@import url("//hello.myfonts.net/count/26ef37");
+
+@font-face {font-family: 'BrandonText-Medium';src: url('../webfonts/26EF29_1_0.eot');src: url('../webfonts/26EF29_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/26EF29_1_0.woff') format('woff'),url('../webfonts/26EF29_1_0.ttf') format('truetype');}
+@font-face {font-family: 'BrandonText-Regular';src: url('../webfonts/26EF37_0_0.eot');src: url('../webfonts/26EF37_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/26EF37_0_0.woff') format('woff'),url('../webfonts/26EF37_0_0.ttf') format('truetype');}
+@font-face {font-family: 'SlatePro-Bk';src: url('../webfonts/2AAC0C_0_0.eot');src: url('../webfonts/2AAC0C_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/2AAC0C_0_0.woff') format('woff'),url('../webfonts/2AAC0C_0_0.ttf') format('truetype');}
+@font-face {font-family: 'SlatePro';src: url('../webfonts/2AAC0C_1_0.eot');src: url('../webfonts/2AAC0C_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/2AAC0C_1_0.woff') format('woff'),url('../webfonts/2AAC0C_1_0.ttf') format('truetype');}
+@font-face {font-family: 'SlatePro-Light';src: url('../webfonts/2AAC0C_2_0.eot');src: url('../webfonts/2AAC0C_2_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/2AAC0C_2_0.woff') format('woff'),url('../webfonts/2AAC0C_2_0.ttf') format('truetype');}
