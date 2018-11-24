@@ -1,8 +1,8 @@
 var config = {
-    apiKey: "AIzaSyAcFp05opE1cXUUcYLbqnFcC50QkZuq5aw",
-    authDomain: "vk-hackathon.firebaseapp.com",
-    databaseURL: "https://vk-hackathon.firebaseio.com",
-    projectId: "vk-hackathon",
+    apiKey: "AIzaSyB7A73qRYl11aiITPOY97zeRkZlVI_PVE8",
+    authDomain: "leroy-3eb25.firebaseapp.com",
+    databaseURL: "https://leroy-3eb25.firebaseio.com",
+    projectId: "leroy-3eb25",
     // storageBucket: "<BUCKET>.appspot.com",
     // messagingSenderId: "<SENDER_ID>",
 };
@@ -40,19 +40,19 @@ firebase.database().ref('/users/points').once('value').then(
         // });
     }
 );
-// document.querySelector('.demo-wrapper').onclick = function(ev) {
-//     console.log(ev.layerX, ev.layerY)
-//     firebase.database().ref('/users/points').push({
-//         x: ev.layerX,
-//         y: ev.layerY
-//     });
-//         //     y: ev.layerY,})
-//     heatmap.addData({
-//         x: ev.layerX,
-//         y: ev.layerY,
-//         value: 0.3
-//     });
-// };
+document.querySelector('.demo-wrapper').onclick = function(ev) {
+    console.log(ev.layerX, ev.layerY);
+    firebase.database().ref('/users/points').push({
+        x: ev.layerX,
+        y: ev.layerY
+    });
+        //     y: ev.layerY,})
+    heatmap.addData({
+        x: ev.layerX,
+        y: ev.layerY,
+        value: 0.3
+    });
+};
 
 // var canvas = document.getElementById('heatmap');
 // var ctx = canvas.getContext('2d');
